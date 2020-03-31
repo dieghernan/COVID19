@@ -53,7 +53,7 @@ par(mar=c(0,0,0,0))
 fechas <- unique(COVIDEsp$Fecha)
 
 #mapa fallecidos ----
-
+i=35
 
 brks <- c(0,200,500,1000, 2000,5000)
 
@@ -82,6 +82,7 @@ for (i in 1:length(fechas)){
                      var = "Fallecidos",
                      col = alpha("red", 0.5),
                      fixmax = 5000,
+                     border=NA,
                      legend.pos = "n",
                      inches = 0.5)
   }
@@ -104,8 +105,10 @@ for (i in 1:length(fechas)){
                      var = "Fallecidos",
                      col = alpha("red", 0.5),
                      fixmax = 5000,
+                     border=NA,
                      legend.pos = "n",
                      inches = 0.5)
+    
   }
   par(keepar)
   par(cex=1.2)
@@ -118,7 +121,11 @@ for (i in 1:length(fechas)){
   )
 }
 dev.off()
-morphed <- image_morph(fig, 10)
-animation <- image_animate(morphed, fps = 10, optimize = TRUE, loop=1 )
-image_write(animation, "gifs/Fallecidos.gif")
+
+animation1 <- image_animate(fig, fps = 2, optimize = TRUE, loop=0 )
+image_write(animation1,"gifs/Fallecidos.gif")
+
+morphed <- image_morph(fig)
+animation <- image_animate(morphed, optimize = TRUE, loop=1)
+image_write(animation, "gifs/FallecidosSmooth.gif")
 
