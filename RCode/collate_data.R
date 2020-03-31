@@ -14,5 +14,5 @@ COVIDEsp$Fecha <- as.Date(COVIDEsp$Fecha,
                           format = "%d/%m/%Y")
 COVIDEsp$ISO2 <- paste0("ES-",COVIDEsp$CCAA.Codigo.ISO)
 write.csv(COVIDEsp,"CUSTOM/COVIDEsp.csv", fileEncoding = "UTF-8")
-save(COVIDEsp, file = "COVIDEsp.RData")
+save(COVIDEsp, file = "CUSTOM/COVIDEsp.RData")
 print(max(COVIDEsp$Fecha))

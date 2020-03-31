@@ -5,8 +5,9 @@ library(dplyr)
 
 #https://dieghernan.github.io/201906_Beautiful2/
 
+
 SPAIN <- st_read(
-  "EUROSTAT/NUTS2_3857.geojson",
+  "https://ec.europa.eu/eurostat/cache/GISCO/distribution/v2/nuts/geojson/NUTS_RG_03M_2016_3857_LEVL_2.geojson",
   stringsAsFactors = FALSE
 ) %>%
   subset(CNTR_CODE == "ES")
@@ -24,6 +25,7 @@ SPAINV2 <- rbind(
     subset(NUTS_ID != "ES70"),
   CANNEW
 )
+plot(st_geometry(SPAINV2))
 
 mapeocods <- read.csv("CUSTOM/Cods_ISO_ESP.csv",
                       fileEncoding = "UTF-8", 
