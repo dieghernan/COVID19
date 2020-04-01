@@ -1,4 +1,4 @@
-remote_theme: jekyll/minima 
+remote_theme: mmistakes/minimal-mistakes 
 title: COVID19 en España
   # generate social links in footer
   social_links:
