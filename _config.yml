@@ -1,2 +1,9 @@
 remote_theme: jekyll/minima
 title: COVID19 en España
+
+minima:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  social_links:
+    github:  dieghernan
