@@ -1,7 +1,2 @@
-remote_theme: mmistakes/minimal-mistakes 
+remote_theme: mmistakes/minimal-mistakes
 title: COVID19 en España
-  # generate social links in footer
-  social_links:
-    github:  dieghernan
-
-theme: jekyll-theme-dinky
