@@ -1,4 +1,5 @@
 remote_theme: jekyll/minima 
 title: COVID19 en España
-author:
-  name: dieghernan 
+  # generate social links in footer
+  social_links:
+    github:  dieghernan
