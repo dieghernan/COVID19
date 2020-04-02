@@ -41,8 +41,7 @@ i=42
 hist(COVID$Hosp10000)
 length(brks)
 
-palette <- divergingx_hcl("RdYlGn", n=7, rev=TRUE, alpha=0.6)
-palette <- scales::alpha(rcartocolor::carto_pal(7,"Temps"),1)
+palette <- divergingx_hcl(7, palette = "RdYlGn", rev =TRUE, alpha=0.75)
 
 
 # iter----
@@ -70,14 +69,14 @@ legendChoro(title.txt ="por 100,000 hab.",
             title.cex = 0.7,
             cex=1.5,
   breaks = brks, nodata=TRUE, col=palette[2:7], nodata.col = palette[1],
-            nodata.txt = "Sin casos")
+            nodata.txt = "No hosp.")
 
 
 labelLayer(plotmap,txt="ISO2_Label", halo=FALSE)
 layoutLayer(title=paste0("COVID19: Ratio Hospitalizados en España"),
             scale=FALSE,
             frame = FALSE,
-            sources = "Datos: ISCIII, © Eurostat\n dieghernan.github.io/COVID"
+            sources = "Datos: ISCIII, © Eurostat\n dieghernan.github.io/COVID19"
 )
 dev.off()
 }
@@ -89,7 +88,7 @@ pngs<-list.files("pngs/")
 RatioHosp<-pngs[grep("RatioHosp",pngs)]
 
  f<- image_read(paste0("pngs/",RatioHosp))
- animation1 <- image_animate(f, fps = 2, optimize = TRUE, loop=0 )
+ animation1 <- image_animate(f, fps = 1, optimize = TRUE, loop=1 )
  image_write(animation1,"gifs/RatioHosp.gif")
 
 
