@@ -1,5 +1,10 @@
 WIP
 
+### Hospitalizados por 100.000 habitantes 
+
+![](https://dieghernan.github.io/COVID19/gifs/RatioHosp.gif)
+
+
 ### Evolucion Fallecidos en España
 
 ![](https://dieghernan.github.io/COVID19/gifs/Fallecidos.gif)
