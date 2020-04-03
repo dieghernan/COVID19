@@ -17,6 +17,3 @@ out <- paste0("CUSTOM/COVIDEsp_",format(max(COVIDEsp$Fecha),"%Y%m%d"),".csv")
 write.csv(COVIDEsp,out, fileEncoding = "UTF-8")
 save(COVIDEsp, file = "CUSTOM/COVIDEsp.RData")
 print(max(COVIDEsp$Fecha))
-
-
-

@@ -1,14 +1,24 @@
-WIP - More to come 
+Mapas por CCAA
+================
 
-### Hospitalizados por 100.000 habitantes 
+*Datos publicados a 02 abril*
 
-![](https://dieghernan.github.io/COVID19/gifs/RatioHosp.gif)
+## Últimos datos
 
+### Hospitalizados por 100.000 habitantes
 
-### Evolucion Fallecidos en España
+![](RatioHospAct.png) \#\#\# Fallecidos en España
 
-![](https://dieghernan.github.io/COVID19/gifs/Fallecidos.gif)
+![](FallecidosAct.png)
 
-### Evolucion Casos UCI en España
+## Evolución
 
-![](https://dieghernan.github.io/COVID19/gifs/UCI.gif)
+### Evolución Hospitalizados por 100.000 habitantes
+
+![](./gifs/RatioHosp.gif)
+
+### Evolución Fallecidos en España
+
+![](./gifs/Fallecidos.gif)
+
+##### Generado en 03 abril 2020 11:06:15 UTC
