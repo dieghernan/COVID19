@@ -1,5 +1,5 @@
 ---
-title: "Mapas por CCAA"
+title: "Situación actual"
 output: github_document
 ---
 ```{r setup, include=FALSE}
@@ -10,7 +10,6 @@ knitr::opts_chunk$set(message = FALSE,
 rm(list = ls())
 source("./RCode/collate_data.R")
 load("CUSTOM/lastdate.Rdata")
-stored <- "2020-01-01"
 load("CUSTOM/COVIDEsp.RData")
 last <- max(COVIDEsp$Fecha)
 #Sys.setlocale("LC_TIME", "Spanish")
@@ -18,64 +17,107 @@ Sys.setlocale("LC_TIME", "es_ES.UTF-8")
 f <- format(max(COVIDEsp$Fecha), "%d %B")
 source("./RCode/func_ratiohosp.R", encoding = "UTF-8")
 source("./RCode/func_fallecidos.R", encoding = "UTF-8")
+source("./RCode/func_all.R", encoding = "UTF-8")
+source("./RCode/func_contagios.R", encoding = "UTF-8")
 
 allfechas <- unique(COVIDEsp$Fecha)
+for (j in 1:length(allfechas)){
+  #Contagios(allfechas[j])
+}
+allfechas[j]
+process <- allfechas[allfechas >= stored]
 
-process <- allfechas[allfechas > stored]
+
 
 for (i in 1:length(process)) {
   RatioHosp(process[i])
   Fallecidos(process[i])
+  AllCases(process[i])
+  Contagios(process[i])
   stored = process[i]
   save(stored, file = "./CUSTOM/lastdate.Rdata")
 }
 
 #Crea copia de actuales
 fpng <- paste0("./pngs/Fallecidos_", format(last, "%y%m%d"), ".png")
-file.copy(fpng, "FallecidosAct.png")
+file.copy(fpng, "figs/FallecidosAct.png")
 fpng <- paste0("./pngs/RatioHosp_", format(last, "%y%m%d"), ".png")
-file.copy(fpng, "RatioHospAct.png")
+file.copy(fpng, "figs/RatioHospAct.png")
+fpng <- paste0("./pngs/Casos_", format(last, "%y%m%d"), ".png")
+file.copy(fpng, "figs/CasosAct.png")
+fpng <- paste0("./pngs/Contagios_", format(last, "%y%m%d"), ".png")
+file.copy(fpng, "figs/ContagiosAct.png")
 
 ```
 *Datos publicados a `r f`*
 
 ## Últimos datos
 
-### Hospitalizados por 100.000 habitantes 
 
-![](RatioHospAct.png)
-### Fallecidos en España
+##### Total Casos por situación en España
 
-![](FallecidosAct.png)
+![](./figs/CasosAct.png)
 
-```{r message=FALSE, warning=FALSE, include=FALSE}
+##### Hospitalizados por 100.000 habitantes
+
+![](./figs/RatioHospAct.png)
+
+##### Contagios en España
+
+![](./figs/ContagiosAct.png)
+
+##### Fallecidos en España
+
+![](./figs/FallecidosAct.png)
+
+```{r gifs, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 #Gifs
 rm(list = ls())
 library(magick)
 pngs <- list.files("pngs/")
+
 all <- pngs[grep("Fallec", pngs)]
 f <- image_read(paste0("pngs/", all))
 gif <- image_animate(f, optimize = TRUE, fps = 1)
-image_write(gif, "gifs/Fallecidos.gif")
+image_write(gif, "figs/Fallecidos.gif")
 
 
 all <- pngs[grep("RatioHosp", pngs)]
 f <- image_read(paste0("pngs/", all))
 gif <- image_animate(f, optimize = TRUE, fps = 1)
-image_write(gif, "gifs/RatioHosp.gif")
+image_write(gif, "figs/RatioHosp.gif")
+
+all <- pngs[grep("Casos", pngs)]
+f <- image_read(paste0("pngs/", all))
+gif <- image_animate(f, optimize = TRUE, fps = 1)
+image_write(gif, "figs/Casos.gif")
+
+all <- pngs[grep("Contagios", pngs)]
+f <- image_read(paste0("pngs/", all))
+gif <- image_animate(f, optimize = TRUE, fps = 1)
+image_write(gif, "figs/Contagios.gif")
+
 ```
 
 ## Evolución
 
-### Evolución Hospitalizados por 100.000 habitantes 
+##### Evolución Casos en España
 
-![](./gifs/RatioHosp.gif)
-
-
-### Evolución Fallecidos en España
-
-![](./gifs/Fallecidos.gif)
+![](./figs/Casos.gif)
 
 
+##### Evolución Hospitalizados por 100.000 habitantes
 
-##### Generado en `r format(Sys.time(), "%d %B %Y %H:%M:%S", usetz = TRUE)`
+![](./figs/RatioHosp.gif)
+
+##### Evolución Contagios en España
+![](./figs/Contagios.gif)
+
+
+##### Evolución Fallecidos en España
+
+![](./figs/Fallecidos.gif)
+
+
+
+##### Generado en `r format(Sys.time(), "%d %B %Y %H:%M:%S", usetz = TRUE, tz="CET")`

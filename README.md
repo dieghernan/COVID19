@@ -5,22 +5,38 @@ Situación actual
 
 ## Últimos datos
 
+##### Total Casos por situación en España
+
+![](./figs/CasosAct.png)
+
 ##### Hospitalizados por 100.000 habitantes
 
-![](RatioHospAct.png) 
+![](./figs/RatioHospAct.png)
+
+##### Contagios en España
+
+![](./figs/ContagiosAct.png)
 
 ##### Fallecidos en España
 
-![](FallecidosAct.png)
+![](./figs/FallecidosAct.png)
 
 ## Evolución
 
+##### Evolución Casos en España
+
+![](./figs/Casos.gif)
+
 ##### Evolución Hospitalizados por 100.000 habitantes
 
-![](./gifs/RatioHosp.gif)
+![](./figs/RatioHosp.gif)
+
+##### Evolución Contagios en España
+
+![](./figs/Contagios.gif)
 
 ##### Evolución Fallecidos en España
 
-![](./gifs/Fallecidos.gif)
+![](./figs/Fallecidos.gif)
 
-##### Generado en 03 abril 2020 11:06:15 UTC
+##### Generado en 03 abril 2020 17:35:08 CEST
