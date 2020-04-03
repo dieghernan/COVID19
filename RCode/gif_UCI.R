@@ -4,6 +4,7 @@ library(sf)
 library(dplyr)
 library(cartography)
 library(scales)
+library(colorspace)
 library(magick)
 
 

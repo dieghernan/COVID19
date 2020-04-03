@@ -35,26 +35,29 @@ COVID[COVID$Hosp100000 == 0, "Hosp100000" ] <- NA
 
 #mapa fallecidos ----
 brks <- pretty(COVID$Hosp10000)
-brks <- c(0,10,25,50,100,200,250)
+brks <- c(1,10,25,50,100,200,250)
 fechas <- unique(COVIDEsp$Fecha)
 i=42
-hist(COVID$Hosp10000)
-length(brks)
 
-palette <- divergingx_hcl(7, palette = "RdYlGn", rev =TRUE, alpha=0.75)
+
+
+palette <- divergingx_hcl(7, palette = "Geyser", alpha=0.9)
+
 
 
 # iter----
-i=1
+i=42
+p <- st_sfc(st_point(c(578006,5255640)),crs=3857)
+p <- st_sf(label="ES",p)
 
 
-for (i in 1:length(fechas)){
-fecha <- fechas[i]
+buffer <- st_sf(label="ES", geometry=st_point(c(578006,5255640)), crs=3857)
+for (i in 42){
+
 namepng <- paste0("pngs/RatioHosp_",format(fecha, "%y%m%d"),".png")
-namepng
 png(namepng, width = 500, height = 500, res = 96 )
 
-  
+fecha <- fechas[i]
 plotmap <- left_join(hextiles,COVID 
                      %>% 
                        filter(Fecha == fecha ), "ISO2") 
@@ -69,10 +72,15 @@ legendChoro(title.txt ="por 100,000 hab.",
             title.cex = 0.7,
             cex=1.5,
   breaks = brks, nodata=TRUE, col=palette[2:7], nodata.col = palette[1],
-            nodata.txt = "No hosp.")
+            nodata.txt = "0")
 
 
 labelLayer(plotmap,txt="ISO2_Label", halo=FALSE)
+
+
+resp <- 100000*sum(plotmap$Hospitalizados)/EspPop2019_EUROSTAT[EspPop2019_EUROSTAT$geo =="ES","values"]
+p$ratio <- resp
+
 layoutLayer(title=paste0("COVID19: Ratio Hospitalizados en España"),
             scale=FALSE,
             frame = FALSE,
