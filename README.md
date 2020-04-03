@@ -1,23 +1,25 @@
-Mapas por CCAA
+Situación actual
 ================
 
 *Datos publicados a 02 abril*
 
 ## Últimos datos
 
-### Hospitalizados por 100.000 habitantes
+##### Hospitalizados por 100.000 habitantes
 
-![](RatioHospAct.png) \#\#\# Fallecidos en España
+![](RatioHospAct.png) 
+
+##### Fallecidos en España
 
 ![](FallecidosAct.png)
 
 ## Evolución
 
-### Evolución Hospitalizados por 100.000 habitantes
+##### Evolución Hospitalizados por 100.000 habitantes
 
 ![](./gifs/RatioHosp.gif)
 
-### Evolución Fallecidos en España
+##### Evolución Fallecidos en España
 
 ![](./gifs/Fallecidos.gif)
 
