@@ -1,7 +1,7 @@
 Situación actual
 ================
 
-*Datos publicados a 02 abril*
+*Datos publicados a 03 abril*
 
 ## Últimos datos
 
@@ -39,4 +39,4 @@ Situación actual
 
 ![](./figs/Fallecidos.gif)
 
-##### Generado en 03 abril 2020 17:35:08 CEST
+##### Generado en 04 abril 2020 12:33:27 CEST

@@ -12,8 +12,8 @@ source("./RCode/collate_data.R")
 load("CUSTOM/lastdate.Rdata")
 load("CUSTOM/COVIDEsp.RData")
 last <- max(COVIDEsp$Fecha)
-#Sys.setlocale("LC_TIME", "Spanish")
-Sys.setlocale("LC_TIME", "es_ES.UTF-8")
+Sys.setlocale("LC_TIME", "Spanish")
+#Sys.setlocale("LC_TIME", "es_ES.UTF-8")
 f <- format(max(COVIDEsp$Fecha), "%d %B")
 source("./RCode/func_ratiohosp.R", encoding = "UTF-8")
 source("./RCode/func_fallecidos.R", encoding = "UTF-8")
@@ -22,7 +22,7 @@ source("./RCode/func_contagios.R", encoding = "UTF-8")
 
 allfechas <- unique(COVIDEsp$Fecha)
 for (j in 1:length(allfechas)){
-  #Contagios(allfechas[j])
+#  RatioHosp(allfechas[j])
 }
 allfechas[j]
 process <- allfechas[allfechas >= stored]
@@ -40,13 +40,13 @@ for (i in 1:length(process)) {
 
 #Crea copia de actuales
 fpng <- paste0("./pngs/Fallecidos_", format(last, "%y%m%d"), ".png")
-file.copy(fpng, "figs/FallecidosAct.png")
+file.copy(fpng, "figs/FallecidosAct.png", overwrite = TRUE )
 fpng <- paste0("./pngs/RatioHosp_", format(last, "%y%m%d"), ".png")
-file.copy(fpng, "figs/RatioHospAct.png")
+file.copy(fpng, "figs/RatioHospAct.png", overwrite = TRUE)
 fpng <- paste0("./pngs/Casos_", format(last, "%y%m%d"), ".png")
-file.copy(fpng, "figs/CasosAct.png")
+file.copy(fpng, "figs/CasosAct.png", overwrite = TRUE)
 fpng <- paste0("./pngs/Contagios_", format(last, "%y%m%d"), ".png")
-file.copy(fpng, "figs/ContagiosAct.png")
+file.copy(fpng, "figs/ContagiosAct.png", overwrite = TRUE)
 
 ```
 *Datos publicados a `r f`*
@@ -70,7 +70,7 @@ file.copy(fpng, "figs/ContagiosAct.png")
 
 ![](./figs/FallecidosAct.png)
 
-```{r gifs, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+```{r gifs, message=FALSE, warning=FALSE, include=FALSE}
 #Gifs
 rm(list = ls())
 library(magick)

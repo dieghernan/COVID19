@@ -62,7 +62,7 @@ RatioHosp <- function(fecha) {
     colNA = palette[1]
   )
   
-  legend("topright", format(unique(shape$Fecha), "%d %b"), bty = "n")
+  legend("topleft", format(unique(shape$Fecha), "%d %b"), bty = "n")
   legendChoro(
     title.txt = "por 100,000 hab.",
     pos = "left",
