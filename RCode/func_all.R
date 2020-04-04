@@ -69,6 +69,7 @@ AllCases <- function(fecha) {
       cellvalue = 500,
       cellsize = 18000,
       add = TRUE,
+      border = NA,
       ncols = 4,
       col = pal[zeros > 0],
       legend.pos = "topright",

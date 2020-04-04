@@ -22,7 +22,7 @@ source("./RCode/func_contagios.R", encoding = "UTF-8")
 
 allfechas <- unique(COVIDEsp$Fecha)
 for (j in 1:length(allfechas)){
-#  RatioHosp(allfechas[j])
+ # AllCases(allfechas[j])
 }
 allfechas[j]
 process <- allfechas[allfechas >= stored]
@@ -78,23 +78,23 @@ pngs <- list.files("pngs/")
 
 all <- pngs[grep("Fallec", pngs)]
 f <- image_read(paste0("pngs/", all))
-gif <- image_animate(f, optimize = TRUE, fps = 1)
+gif <- image_animate(f, optimize = TRUE, fps = 1, loop = 1)
 image_write(gif, "figs/Fallecidos.gif")
 
 
 all <- pngs[grep("RatioHosp", pngs)]
 f <- image_read(paste0("pngs/", all))
-gif <- image_animate(f, optimize = TRUE, fps = 1)
+gif <- image_animate(f, optimize = TRUE, fps = 1, loop = 1)
 image_write(gif, "figs/RatioHosp.gif")
 
 all <- pngs[grep("Casos", pngs)]
 f <- image_read(paste0("pngs/", all))
-gif <- image_animate(f, optimize = TRUE, fps = 1)
+gif <- image_animate(f, optimize = TRUE, fps = 1, loop = 1)
 image_write(gif, "figs/Casos.gif")
 
 all <- pngs[grep("Contagios", pngs)]
 f <- image_read(paste0("pngs/", all))
-gif <- image_animate(f, optimize = TRUE, fps = 1)
+gif <- image_animate(f, optimize = TRUE, fps = 1, loop = 1)
 image_write(gif, "figs/Contagios.gif")
 
 ```

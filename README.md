@@ -39,4 +39,4 @@ Situación actual
 
 ![](./figs/Fallecidos.gif)
 
-##### Generado en 04 abril 2020 12:33:27 CEST
+##### Generado en 04 abril 2020 13:02:48 CEST
