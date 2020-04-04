@@ -48,14 +48,8 @@ AllCases <- function(fecha) {
 
     pal <-
       c("black",
-        sequential_hcl(
-          n = 1,
-          palette = "Reds"
-        ),
-        sequential_hcl(
-          n = 1,
-          palette = "Greens"
-        )
+        "indianred2",
+        "limegreen"
       ) 
     pal <- scales::alpha(pal,0.8)
 
