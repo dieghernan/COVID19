@@ -24,7 +24,8 @@ allfechas <- unique(COVIDEsp$Fecha)
 for (j in 1:length(allfechas)){
  # AllCases(allfechas[j])
 }
-allfechas[j]
+
+#stored <- "2020-01-01"
 process <- allfechas[allfechas >= stored]
 
 
