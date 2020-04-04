@@ -2,13 +2,15 @@
 title: "Situación actual"
 output: github_document
 ---
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message = FALSE,
                       warning = FALSE,
                       include = FALSE)
 #Update source
 rm(list = ls())
-source("./RCode/collate_data.R")
+#source("./RCode/collate_data.R")
 load("CUSTOM/lastdate.Rdata")
 load("CUSTOM/COVIDEsp.RData")
 last <- max(COVIDEsp$Fecha)
@@ -22,7 +24,7 @@ source("./RCode/func_contagios.R", encoding = "UTF-8")
 
 allfechas <- unique(COVIDEsp$Fecha)
 for (j in 1:length(allfechas)){
- # AllCases(allfechas[j])
+  #AllCases(allfechas[j])
 }
 
 #stored <- "2020-01-01"
@@ -51,6 +53,22 @@ file.copy(fpng, "figs/ContagiosAct.png", overwrite = TRUE)
 
 ```
 *Datos publicados a `r f`*
+
+Projecto Open Source de visualización geográfica de la evolución de la pandemia COVID19 en España. Se proporcionan gráficos estáticos en formato `png` (500x500 pixels) y visualizaciones de evolución en formato `gif`. La página se actualiza una vez al día y muestra los mapas más recientes, el histórico de `png` diarios se encuentran en [este repositorio](https://github.com/dieghernan/COVID19/tree/master/pngs).
+
+- [Últimos datos](#últimos-datos)
+- [Evolución](#evolución)
+
+**Fuente de datos**
+
+Datos oficiales proporcionados por el [Instituto de Salud Carlos III (ISCIII)](https://covid19.isciii.es/).
+
+**Licencia de uso**
+
+Projecto generado bajo [**MIT License**](./LICENSE). Se permite la reutilización siempre y cuando se cite a este repositorio como fuente.
+
+
+---
 
 ## Últimos datos
 
@@ -100,6 +118,8 @@ image_write(gif, "figs/Contagios.gif")
 
 ```
 
+---
+
 ## Evolución
 
 ##### Evolución Casos en España
@@ -121,4 +141,5 @@ image_write(gif, "figs/Contagios.gif")
 
 
 
-##### Generado en `r format(Sys.time(), "%d %B %Y %H:%M:%S", usetz = TRUE, tz="CET")`
+*Generado `r format(Sys.time(), "%d %B %Y %H:%M:%S", usetz = TRUE, tz="CET")` con* **R-Studio**.
+

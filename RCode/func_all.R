@@ -1,6 +1,6 @@
 
 
-fecha = "2020-03-28"
+
 
 AllCases <- function(fecha) {
   library(dplyr)
@@ -14,23 +14,20 @@ AllCases <- function(fecha) {
   #shp
   map <- st_read("CUSTOM/esp_ccaa.gpkg", stringsAsFactors = FALSE)
   Datos <- COVIDEsp %>% filter(Fecha == fecha)
-  Datos$Otros <- Datos$Casos - Datos$Hospitalizados 
+  Datos$Activos <- Datos$Casos - Datos$Fallecidos-Datos$Recuperados 
   shape <- left_join(map, Datos)
   variables <-
     c("Fallecidos",
-      "Hospitalizados",
-      "Otros",
+      "Activos",
       "Recuperados")
   labs <- c("Fallecidos",
-            "Hospitalizados",
-            "Resto casos activos",
+            "Casos activos",
             "Recuperados")
   
   # See if no 0
   zeros <- c(
     sum(Datos$Fallecidos),
-    sum(Datos$Hospitalizados),
-    sum(Datos$Otros),
+    sum(Datos$Activos),
     sum(Datos$Recuperados)
   )
   
@@ -48,20 +45,20 @@ AllCases <- function(fecha) {
       border = "grey35",
       ylim = c(4123470, 5750000)
     )
+
     pal <-
-      c(
-        "black",
-        sequential_hcl(
-          n = 3,
-          palette = "Reds",
-          alpha = 0.8
-        )[1:2],
+      c("black",
         sequential_hcl(
           n = 1,
-          palette = "Greens",
-          alpha = 0.8
+          palette = "Reds"
+        ),
+        sequential_hcl(
+          n = 1,
+          palette = "Greens"
         )
-      )
+      ) 
+    pal <- scales::alpha(pal,0.8)
+
     waffleLayer(
       shape,
       var = variables[zeros > 0],
