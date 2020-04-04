@@ -63,4 +63,4 @@ reutilización siempre y cuando se cite a este repositorio como fuente.
 
 ![](./figs/Fallecidos.gif)
 
-*Generado 04 abril 2020 19:47:01 CEST con* **R-Studio**.
+*Generado 04 abril 2020 19:56:14 CEST con* **R-Studio**.

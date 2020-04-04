@@ -41,8 +41,8 @@ RatioHosp <- function(fecha) {
   plotmap[plotmap$Hosp100000 == 0, "Hosp100000"] <- NA
   
   #Plot
-  brks <- c(1, 10, 25, 50, 100, 200, 250)
-  palette <- divergingx_hcl(7, palette = "Geyser", alpha = 0.9)
+  brks <- c(1, 10, 25, 50, 100, 200, 250,500)
+  palette <- divergingx_hcl(8, palette = "Geyser", alpha = 0.9)
   
   
   namepng <-
@@ -57,7 +57,7 @@ RatioHosp <- function(fecha) {
     var = "Hosp100000",
     border = "grey50",
     breaks = brks ,
-    col = palette[2:7],
+    col = palette[-1],
     legend.pos = "n",
     colNA = palette[1]
   )
@@ -71,7 +71,7 @@ RatioHosp <- function(fecha) {
     cex = 1.5,
     breaks = brks,
     nodata = TRUE,
-    col = palette[2:7],
+    col = palette[-1],
     nodata.col = palette[1],
     nodata.txt = "0"
   )

@@ -23,9 +23,9 @@ source("./RCode/func_all.R", encoding = "UTF-8")
 source("./RCode/func_contagios.R", encoding = "UTF-8")
 
 allfechas <- unique(COVIDEsp$Fecha)
-for (j in 1:length(allfechas)){
-  #AllCases(allfechas[j])
-}
+# for (j in 1:length(allfechas)){
+#   RatioHosp(allfechas[j])
+# }
 
 #stored <- "2020-01-01"
 process <- allfechas[allfechas >= stored]
