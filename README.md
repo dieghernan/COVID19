@@ -1,6 +1,10 @@
 Visualización de datos geográficos
 ================
 
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="dhernangomez" data-hashtags="COVID19España" data-show-count="true">Tweet</a>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 *Datos publicados a 03 abril*
 
 Projecto Open Source de visualización geográfica de la evolución de la
@@ -77,4 +81,4 @@ administradores a través de este enlace:
 
 ![](./figs/Fallecidos.gif)
 
-*Generado 05 abril 2020 06:34:46 CEST con* **R-Studio**.
+*Generado 05 abril 2020 07:17:27 CEST con* **R-Studio**.

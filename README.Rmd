@@ -2,7 +2,7 @@
 title: "Visualización de datos geográficos"
 output: github_document
 ---
-
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-via="dhernangomez" data-hashtags="COVID19España" data-show-count="true">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message = FALSE,
