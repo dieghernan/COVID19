@@ -3,4 +3,4 @@ theme: jekyll-theme-slate
 title: COVID19 en España
 description: Microsite - Data Viz
 google_analytics: "UA-139034853-1"
-baseurl: https://dieghernan.github.io/COVID19/
+microsite: https://dieghernan.github.io/COVID19/
