@@ -8,7 +8,7 @@ microsite: https://dieghernan.github.io/COVID19/
 defaults:
   -
     scope:
-      path: "assets/figs"
+      path: "pngs"
     values:
       image: true
 
