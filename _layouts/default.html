@@ -63,7 +63,11 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-		<a id="forkme_banner" style="background-color:black" href="{{ site.github.repository_url }}">GitHub Repo</a>
+		<a id="forkme_banner2" style="background-color:black" href="{{ site.github.repository_url }}">
+			<span class="fa-stack fa-lg" aria-hidden="true">
+				<i class="fa fa-github fa-stack-1x" style="font-size: xx-large"></i>
+			</span><span class="sr-only">GitHub</span>GitHub Repo
+		</a>
         <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
 		<h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
         </header>
@@ -78,17 +82,11 @@
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright" stile="text-align:center">Microsite creado por <a href="https://dieghernan.github.io/">{{ site.github.owner_name }}</a>
+      <footer class="inner"  stile="text-align:center">
+        <p class="copyright">Microsite creado por <a href="https://dieghernan.github.io/">{{ site.github.owner_name }}</a>
 		&nbsp;&bull;&nbsp; {{ site.time | date: '%Y' }}</p>
 		<div id="div_top_hypers">
 		<ul id="ul_top_hypers">
-			<li id="iconlist"><a href="https://github.com/dieghernan" title="GitHub">
-					<span class="fa-stack fa-lg fa-x2" aria-hidden="true">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-github fa-stack-1x fa-inverse black"></i>
-					</span><span class="sr-only">GitHub</span>					
-			</a></li>
 			<li id="iconlist"><a href="https://stackoverflow.com/users/7877917/dieghernan" title="StackOverflow">
 				<span class="fa-stack fa-lg fa-x2" aria-hidden="true">
 					<i class="fa fa-circle fa-stack-2x"></i>
@@ -96,6 +94,19 @@
 					</span>
 				<span class="sr-only">StackOverflow</span>
 			</a></li>
+			<li id="iconlist"><a href="https://github.com/dieghernan" title="GitHub">
+					<span class="fa-stack fa-lg fa-x2" aria-hidden="true">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-github fa-stack-1x fa-inverse black"></i>
+					</span><span class="sr-only">GitHub</span>					
+			</a></li>
+				<li id="iconlist"><a href="https://dieghernan.github.io" title="Blog">
+					<span class="fa-stack fa-lg fa-x2" aria-hidden="true">
+						<i class="fa fa-circle fa-stack-2x"></i>
+						<i class="fa fa-wordpress fa-stack-1x fa-inverse black"></i>
+					</span><span class="sr-only">Blog</span>					
+			</a></li>
+
 			<li id="iconlist"><a href="https://rpubs.com/dieghernan" title="RPubs">
 				<span class="fa-stack fa-lg fa-x2" aria-hidden="true">
 					<i class="fa fa-circle fa-stack-2x"></i>
