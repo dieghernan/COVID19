@@ -1,11 +1,43 @@
 ---
 layout: default
 ---
-
-Prueba galería layout
-
+<style>
+	/* The Masonry Container */
+	.masonry {
+		margin: 0;
+		max-width: 768px;
+		column-gap: 0.2em;
+	}
+	/* The Masonry Brick */
+	.item {
+		border-radius: 0.5em;
+		padding: 0;
+		margin: 0 0 0.2em;
+	}
+/* Masonry on large screens */
+	@media only screen and (min-width: 1024px) {
+		.masonry {
+			column-count: 3;
+		}
+	}
+	/* Masonry on medium-sized screens */
+	@media only screen and (max-width: 1023px) and (min-width: 768px) {
+		.masonry {
+			column-count: 2;
+		}
+	}
+	/* Masonry on small screens */
+	@media only screen and (max-width: 767px) and (min-width: 300px) {
+		.masonry {
+			column-count: 2;
+		}
+	}
+</style>
+<h2>Prueba galería layout</h2>
+<div class="masonry">
 	{% assign image_files = site.static_files | where: "image", true | sort: 'basename' | reverse | where_exp:"item",
 "item.extname contains 'png'"  %}
 	{% for myimage in image_files %}
 	 	 <img class="item" src="{{ myimage.path | prepend: site.microsite }}">
 	{% endfor %}	
+</div>
