@@ -398,7 +398,7 @@ body {
 	box-sizing: border-box;
 	color: #373737;
 	background: #212121;
-	font-size: 16px;
+	font-size: 18px;
 	font-family: 'Roboto', Calibri, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased
@@ -759,9 +759,9 @@ form {
 }
 
 @media screen and (max-width: 320px) {
-	body {
-		font-size: 14px
-	}
+	
+	
+	
 	#downloads {
 		display: none
 	}
