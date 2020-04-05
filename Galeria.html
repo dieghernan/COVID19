@@ -36,7 +36,7 @@ layout: default
 <h2>Prueba galería layout</h2>
 <div class="masonry">
 	{% assign image_files = site.static_files | where: "image", true | sort: 'basename' | reverse | where_exp:"item",
-"item.extname contains 'png'"  %}
+"item.basename contains 'Casos_'"  %}
 	{% for myimage in image_files %}
 	 	 <img class="item" src="{{ myimage.path | prepend: site.microsite }}">
 	{% endfor %}	
