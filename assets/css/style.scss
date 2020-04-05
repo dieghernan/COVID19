@@ -638,7 +638,7 @@ form {
 	background: -ms-linear-gradient(top, #373737, #212121);
 	background: -o-linear-gradient(top, #373737, #212121);
 	background: linear-gradient(to top, #373737, #212121);
-	background: url(https://dieghernan.github.io/COVID19/CUSTOM/header.png)
+	background: url(https://dieghernan.github.io/COVID19/CUSTOM/header.png) no-repeat center
 }
 
 #header_wrap .inner {
@@ -799,4 +799,14 @@ form {
 		max-width: 320px;
 		font-size: 11px
 	}
+}
+#div_top_hypers {
+    background-color:#212121;
+    display:inline;      
+}
+#ul_top_hypers li{
+    display: inline;
+}
+.red{
+  color:red;
 }

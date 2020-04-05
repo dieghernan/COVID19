@@ -81,4 +81,4 @@ administradores a través de este enlace:
 
 ![](./figs/Fallecidos.gif)
 
-*Generado 05 abril 2020 07:22:16 CEST con* **R-Studio**.
+*Generado 05 abril 2020 11:30:57 CEST con* **R-Studio**.
