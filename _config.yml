@@ -4,3 +4,11 @@ title: COVID19 en España
 description: Microsite - Data Viz
 google_analytics: "UA-139034853-1"
 microsite: https://dieghernan.github.io/COVID19/
+
+defaults:
+  -
+    scope:
+      path: "assets/figs"
+    values:
+      image: true
+
