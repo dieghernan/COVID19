@@ -1,4 +1,4 @@
-Situación actual
+Visualización de datos geográficos
 ================
 
 *Datos publicados a 03 abril*
@@ -15,13 +15,27 @@ repositorio](https://github.com/dieghernan/COVID19/tree/master/pngs).
 
 **Fuente de datos**
 
-Datos oficiales proporcionados por el [Instituto de Salud Carlos III
-(ISCIII)](https://covid19.isciii.es/).
+  - Datos oficiales proporcionados por el [Instituto de Salud Carlos III
+    (ISCIII)](https://covid19.isciii.es/).
+  - © EuroGeographics para los límites administrativos.
+  - Datos de población extraídos mediante el paquete
+    [`eurostat`](http://ropengov.github.io/eurostat) (© Leo Lahti, Janne
+    Huovari, Markus Kainu, Przemyslaw Biecek. Retrieval and analysis of
+    Eurostat open data with the eurostat package. [R
+    Journal 9(1):385-392, 2017.](https://journal.r-project.org/archive/2017/RJ-2017-019/index.html))
 
 **Licencia de uso**
 
 Projecto generado bajo [**MIT License**](./LICENSE). Se permite la
 reutilización siempre y cuando se cite a este repositorio como fuente.
+
+**Buzón de sugerencias**
+
+Este proyecto se plantea como un proyecto colaborativo. Para sugerencias
+de nuevas visualizaciones, errores en los datos o cualquier otro asunto
+relacionado con este proyecto, puedes ponerte en contacto con los
+administradores a través de este enlace:
+[Buzón](https://github.com/dieghernan/COVID19/issues/new/choose).
 
 -----
 
@@ -63,4 +77,4 @@ reutilización siempre y cuando se cite a este repositorio como fuente.
 
 ![](./figs/Fallecidos.gif)
 
-*Generado 04 abril 2020 19:56:14 CEST con* **R-Studio**.
+*Generado 05 abril 2020 06:34:46 CEST con* **R-Studio**.
