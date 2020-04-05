@@ -1,4 +1,8 @@
-Prueba para crear galería 
+---
+layout: default
+---
+
+Prueba galería layout
 
 	{% assign image_files = site.static_files | where: "image", true | sort: 'basename' | reverse | where_exp:"item",
 "item.extname contains 'png'"  %}
