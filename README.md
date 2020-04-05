@@ -5,7 +5,7 @@ Visualización de datos geográficos
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-*Datos publicados a 03 abril*
+*Datos publicados a 04 abril*
 
 Projecto Open Source de visualización geográfica de la evolución de la
 pandemia COVID19 en España. Se proporcionan gráficos estáticos en
@@ -81,4 +81,4 @@ administradores a través de este enlace:
 
 ![](./figs/Fallecidos.gif)
 
-*Generado 05 abril 2020 11:30:57 CEST con* **R-Studio**.
+*Generado 05 abril 2020 12:54:23 CEST con* **R-Studio**.
