@@ -8,10 +8,6 @@ output:
     toc_depth: 1
 ---
 
--   [El proyecto](#el-proyecto)
--   [Últimos datos](#últimos-datos)
--   [Evolución](#evolución)
-
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://dieghernan.github.io/COVID19/" data-via="dhernangomez" data-hashtags="COVID19España" data-show-count="true">Tweet</a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
