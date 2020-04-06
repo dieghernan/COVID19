@@ -1,27 +1,8 @@
+# COVID19 en España
 
--   [El proyecto](#el-proyecto)
--   [Últimos datos](#últimos-datos)
-    -   [Total Casos por situación en
-        España](#total-casos-por-situación-en-españa)
-    -   [Hospitalizados por 100.000
-        habitantes](#hospitalizados-por-100.000-habitantes)
-    -   [Contagios en España](#contagios-en-españa)
-    -   [Fallecidos en España](#fallecidos-en-españa)
--   [Evolución](#evolución)
-    -   [Evolución Casos en España](#evolución-casos-en-españa)
-    -   [Evolución Hospitalizados por 100.000
-        habitantes](#evolución-hospitalizados-por-100.000-habitantes)
-    -   [Evolución Contagios en España](#evolución-contagios-en-españa)
-    -   [Evolución Fallecidos en
-        España](#evolución-fallecidos-en-españa)
+En la web: https://dieghernan.github.io/COVID19/
 
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://dieghernan.github.io/COVID19/" data-via="dhernangomez" data-hashtags="COVID19España" data-show-count="true">Tweet</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-*Datos publicados a 05 abril*
-
-El proyecto
------------
+## El proyecto
 
 Projecto Open Source de visualización geográfica de la evolución de la
 pandemia COVID19 en España. Se proporcionan gráficos estáticos en
@@ -57,44 +38,6 @@ relacionado con este proyecto, puedes ponerte en contacto con los
 administradores a través de este enlace:
 [Buzón](https://github.com/dieghernan/COVID19/issues/new/choose).
 
-Últimos datos
--------------
+![](./figs/Casos.gif)![](./figs/RatioHosp.gif)![](./figs/Contagios.gif)![](./figs/Fallecidos.gif)
 
-##### Total Casos por situación en España
 
-![](./figs/CasosAct.png)
-
-##### Hospitalizados por 100.000 habitantes
-
-![](./figs/RatioHospAct.png)
-
-##### Contagios en España
-
-![](./figs/ContagiosAct.png)
-
-##### Fallecidos en España
-
-![](./figs/FallecidosAct.png)
-
-Evolución
----------
-
-##### Evolución Casos en España
-
-![](./figs/Casos.gif)
-
-##### Evolución Hospitalizados por 100.000 habitantes
-
-![](./figs/RatioHosp.gif)
-
-##### Evolución Contagios en España
-
-![](./figs/Contagios.gif)
-
-##### Evolución Fallecidos en España
-
-![](./figs/Fallecidos.gif)
-
-------------------------------------------------------------------------
-
-*Generado 06 abril 2020 12:07:58 CEST con* **R-Studio**.
