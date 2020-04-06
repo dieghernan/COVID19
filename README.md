@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "COVID19 en España"
 tagline: "Visualización de datos"
 output: 
