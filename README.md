@@ -1,13 +1,3 @@
----
-layout: default
-permalink: /COVID19
-title: "COVID19 en España"
-tagline: "Visualización de datos"
-output: 
-  md_document:
-    preserve_yaml: true
-    toc: true
----
 
 -   [El proyecto](#el-proyecto)
 -   [Últimos datos](#últimos-datos)
