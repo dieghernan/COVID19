@@ -5,23 +5,12 @@ output:
   md_document:
     preserve_yaml: true
     toc: true
+    toc_depth: 1
 ---
 
 -   [El proyecto](#el-proyecto)
 -   [Últimos datos](#últimos-datos)
-    -   [Total Casos por situación en
-        España](#total-casos-por-situación-en-españa)
-    -   [Hospitalizados por 100.000
-        habitantes](#hospitalizados-por-100.000-habitantes)
-    -   [Contagios en España](#contagios-en-españa)
-    -   [Fallecidos en España](#fallecidos-en-españa)
 -   [Evolución](#evolución)
-    -   [Evolución Casos en España](#evolución-casos-en-españa)
-    -   [Evolución Hospitalizados por 100.000
-        habitantes](#evolución-hospitalizados-por-100.000-habitantes)
-    -   [Evolución Contagios en España](#evolución-contagios-en-españa)
-    -   [Evolución Fallecidos en
-        España](#evolución-fallecidos-en-españa)
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://dieghernan.github.io/COVID19/" data-via="dhernangomez" data-hashtags="COVID19España" data-show-count="true">Tweet</a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -105,4 +94,4 @@ Evolución
 
 ------------------------------------------------------------------------
 
-*Generado 06 abril 2020 12:25:33 CEST con* **R-Studio**.
+*Generado 06 abril 2020 12:38:30 CEST con* **R-Studio**.
