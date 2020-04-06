@@ -486,9 +486,9 @@ strong {
 	font-weight: bold
 }
 
-img {
+img {   display: block;
 	position: relative;
-	margin: 0 auto;
+	margin: auto;
 	max-width: 739px;
 	padding: 5px;
 	margin: 10px 0 10px 0;
