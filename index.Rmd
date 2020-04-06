@@ -1,11 +1,9 @@
 ---
 title: "COVID19 en España"
-tagline: "Visualización de datos"
+subtitle: "Visualización de datos"
 output: 
   md_document:
     preserve_yaml: true
-    toc: true
-    toc_depth: 1
 ---
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://dieghernan.github.io/COVID19/" data-via="dhernangomez" data-hashtags="COVID19España" data-show-count="true">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
