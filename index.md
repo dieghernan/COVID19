@@ -1,6 +1,6 @@
 ---
 title: "COVID19 en España"
-tagline: "Visualización de datos"
+subtitle: "Visualización de datos"
 output: 
   md_document:
     preserve_yaml: true
