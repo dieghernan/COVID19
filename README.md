@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /COVID19
 title: "COVID19 en España"
 tagline: "Visualización de datos"
 output: 
