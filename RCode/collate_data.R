@@ -1,5 +1,6 @@
 rm(list = ls())
 library(dplyr)
+options("scipen"=100, "digits"=4)
 
 # ISCIII----
 path <-
@@ -11,6 +12,8 @@ COVIDEsp <- COVIDEsp[COVIDEsp$Fecha != "", ]
 COVIDEsp$Fecha <- as.Date(COVIDEsp$Fecha,
                           format = "%d/%m/%Y")
 COVIDEsp[is.na(COVIDEsp)] <- 0
+COVIDEsp$Casos_Activos <- COVIDEsp$Casos-COVIDEsp$Fallecidos-COVIDEsp$Recuperados
+
 COVIDEsp[COVIDEsp$CCAA.Codigo.ISO == "ME", ]$CCAA.Codigo.ISO <- "ML"
 COVIDEsp$ISO2 <- paste0("ES-", COVIDEsp$CCAA.Codigo.ISO)
 
@@ -46,7 +49,7 @@ evoluciones <- function(var, tabla){
     tapply(try$var2, INDEX = try$ISO2,
            FUN = function(x) c(0,diff(as.numeric(x)))))
   try$var3<- round(try$var3/(try$var2-try$var3),6)
-  options("scipen"=100, "digits"=4)
+  try[!is.finite(try$var3),]$var3 <- NA
   names(try) <- c(oldnames,newvar,newvar2,newvar3)
   return(try)
 }
@@ -58,11 +61,12 @@ COVIDEsp <- evoluciones("Hospitalizados", COVIDEsp)
 COVIDEsp <- evoluciones("UCI", COVIDEsp)
 COVIDEsp <- evoluciones("Fallecidos", COVIDEsp)
 COVIDEsp <- evoluciones("Recuperados", COVIDEsp)
+COVIDEsp <- evoluciones("Casos_Activos", COVIDEsp)
 COVIDEsp$tmstamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S",tz = "UTC",
                            usetz = TRUE)
 
 out <- paste0("CUSTOM/COVIDEsp_",format(max(COVIDEsp$Fecha),"%Y%m%d"),".csv")
-write.csv(COVIDEsp,out, fileEncoding = "UTF-8")
+write.csv(COVIDEsp,out, fileEncoding = "UTF-8", row.names = F)
 save(COVIDEsp, file = "CUSTOM/COVIDEsp.RData")
 
-
+COVIDEsp[is.finite(COVIDEsp),]
