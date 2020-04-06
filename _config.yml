@@ -12,3 +12,6 @@ defaults:
     values:
       image: true
 
+exclude:
+  - LICENSE
+  - README.md
