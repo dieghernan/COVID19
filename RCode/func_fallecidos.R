@@ -10,11 +10,7 @@ Fallecidos <- function(fecha) {
   #shp
   map <- st_read("CUSTOM/esp_ccaa.gpkg", stringsAsFactors = FALSE)
   
-  COVIDEsp <- read.csv("CUSTOM/COVIDEsp_actual.csv",
-                       stringsAsFactors = FALSE,
-                       fileEncoding = "UTF-8")
-  
-  COVIDEsp$Fecha <- as.Date(COVIDEsp$Fecha)
+  load("CUSTOM/COVIDEsp.Rdata")
   
   Datos <- COVIDEsp %>% filter(Fecha == fecha)
   shape <- left_join(map, Datos)

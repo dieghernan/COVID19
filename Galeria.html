@@ -34,10 +34,37 @@ layout: navbar
 		}
 	}
 </style>
-<h2>Prueba galería layout</h2>
+<h4>Evolución de Casos en España</h4>
 <div class="masonry">
 	{% assign image_files = site.static_files | where: "image", true | sort: 'basename' | reverse | where_exp:"item",
 "item.basename contains 'Casos_'"  %}
+	{% for myimage in image_files %}
+	 	 <img class="item" src="{{ myimage.path | prepend: site.microsite }}">
+	{% endfor %}	
+</div>
+
+<h4>Evolución Hospitalizados por 100.000 habitantes</h4>
+<div class="masonry">
+	{% assign image_files = site.static_files | where: "image", true | sort: 'basename' | reverse | where_exp:"item",
+"item.basename contains 'RatioHosp_'"  %}
+	{% for myimage in image_files %}
+	 	 <img class="item" src="{{ myimage.path | prepend: site.microsite }}">
+	{% endfor %}	
+</div>
+
+<h4>Evolución Contagios en España</h4>
+<div class="masonry">
+	{% assign image_files = site.static_files | where: "image", true | sort: 'basename' | reverse | where_exp:"item",
+"item.basename contains 'Contagios_'"  %}
+	{% for myimage in image_files %}
+	 	 <img class="item" src="{{ myimage.path | prepend: site.microsite }}">
+	{% endfor %}	
+</div>
+
+<h4>Evolución Fallecidos en España</h4>
+<div class="masonry">
+	{% assign image_files = site.static_files | where: "image", true | sort: 'basename' | reverse | where_exp:"item",
+"item.basename contains 'Fallecidos_'"  %}
 	{% for myimage in image_files %}
 	 	 <img class="item" src="{{ myimage.path | prepend: site.microsite }}">
 	{% endfor %}	

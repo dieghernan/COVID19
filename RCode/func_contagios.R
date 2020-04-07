@@ -6,11 +6,7 @@ Contagios <- function(fecha) {
   library(cartography)
   library(colorspace)
   
-  COVIDEsp <- read.csv("CUSTOM/COVIDEsp_actual.csv",
-                       stringsAsFactors = FALSE,
-                       fileEncoding = "UTF-8")
-  
-  COVIDEsp$Fecha <- as.Date(COVIDEsp$Fecha)
+  load("CUSTOM/COVIDEsp.Rdata")
   
   #shp
   map <- st_read("CUSTOM/esp_ccaa.gpkg", stringsAsFactors = FALSE)

@@ -1,20 +1,12 @@
 
 
-fecha = process[6]
-
-
 AllCases <- function(fecha) {
   library(dplyr)
   library(sf)
   library(cartography)
   library(colorspace)
   
-  COVIDEsp <- read.csv("CUSTOM/COVIDEsp_actual.csv",
-                       stringsAsFactors = FALSE,
-                       fileEncoding = "UTF-8")
-  
-  COVIDEsp$Fecha <- as.Date(COVIDEsp$Fecha,
-                            format = "%Y-%m-%d")
+  load("CUSTOM/COVIDEsp.Rdata")
   
   
   #shp

@@ -7,12 +7,7 @@ RatioHosp <- function(fecha) {
   load("CUSTOM/Pop2019_Eurostat.RData")
   
   
-  COVIDEsp <- read.csv("CUSTOM/COVIDEsp_actual.csv",
-                       stringsAsFactors = FALSE,
-                       fileEncoding = "UTF-8")
-  
-  COVIDEsp$Fecha <- as.Date(COVIDEsp$Fecha,
-                            format = "%Y-%m-%d")
+  load("CUSTOM/COVIDEsp.Rdata")
   
   #Hextiles
   hextiles <- st_read("CUSTOM/esp_ccaa_hexgrid.gpkg",
