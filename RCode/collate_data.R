@@ -1,6 +1,5 @@
 rm(list = ls())
 library(dplyr)
-options("scipen"=100, "digits"=4)
 
 # ISCIII----
 path <-
@@ -9,6 +8,15 @@ path <-
 # Procesa
 COVIDEsp <- read.csv(path, stringsAsFactors = F)
 COVIDEsp <- COVIDEsp[COVIDEsp$Fecha != "", ]
+COVIDEsp$Fecha <- as.Date(COVIDEsp$Fecha,
+                          format = "%d/%m/%Y")
+
+
+
+# Backup
+out <- paste0("CUSTOM/COVIDEsp_",format(max(COVIDEsp$Fecha),"%Y%m%d"),".csv")
+write.csv(COVIDEsp,out, fileEncoding = "UTF-8", row.names = F)
+
 COVIDEsp$Fecha <- as.Date(COVIDEsp$Fecha,
                           format = "%d/%m/%Y")
 COVIDEsp[is.na(COVIDEsp)] <- 0
@@ -65,8 +73,6 @@ COVIDEsp <- evoluciones("Casos_Activos", COVIDEsp)
 COVIDEsp$tmstamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S",tz = "UTC",
                            usetz = TRUE)
 
-out <- paste0("CUSTOM/COVIDEsp_",format(max(COVIDEsp$Fecha),"%Y%m%d"),".csv")
-write.csv(COVIDEsp,out, fileEncoding = "UTF-8", row.names = F)
-save(COVIDEsp, file = "CUSTOM/COVIDEsp.RData")
+write.csv(COVIDEsp,"CUSTOM/COVIDEsp_actual.csv", fileEncoding = "UTF-8", row.names = F)
 
-COVIDEsp[is.finite(COVIDEsp),]
+rm(list=ls())

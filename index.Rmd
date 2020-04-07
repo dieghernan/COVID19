@@ -15,7 +15,12 @@ knitr::opts_chunk$set(message = FALSE,
 rm(list = ls())
 source("./RCode/collate_data.R")
 load("CUSTOM/lastdate.Rdata")
-load("CUSTOM/COVIDEsp.RData")
+COVIDEsp <- read.csv("CUSTOM/COVIDEsp_actual.csv",
+                     stringsAsFactors = FALSE,
+                     fileEncoding = "UTF-8")
+
+COVIDEsp$Fecha <- as.Date(COVIDEsp$Fecha)
+max(COVIDEsp$Fecha)
 last <- max(COVIDEsp$Fecha)
 #Sys.setlocale("LC_TIME", "Spanish")
 Sys.setlocale("LC_TIME", "es_ES.UTF-8")
@@ -61,9 +66,7 @@ allfechas <- unique(COVIDEsp$Fecha)
 #   RatioHosp(allfechas[j])
 # }
 
-#stored <- "2020-01-01"
 process <- allfechas[allfechas >= stored]
-
 
 
 for (i in 1:length(process)) {

@@ -1,5 +1,6 @@
 
 
+fecha = process[6]
 
 
 AllCases <- function(fecha) {
@@ -8,17 +9,21 @@ AllCases <- function(fecha) {
   library(cartography)
   library(colorspace)
   
-  load("CUSTOM/COVIDEsp.RData")
+  COVIDEsp <- read.csv("CUSTOM/COVIDEsp_actual.csv",
+                       stringsAsFactors = FALSE,
+                       fileEncoding = "UTF-8")
+  
+  COVIDEsp$Fecha <- as.Date(COVIDEsp$Fecha,
+                            format = "%Y-%m-%d")
   
   
   #shp
   map <- st_read("CUSTOM/esp_ccaa.gpkg", stringsAsFactors = FALSE)
   Datos <- COVIDEsp %>% filter(Fecha == fecha)
-  Datos$Activos <- Datos$Casos - Datos$Fallecidos-Datos$Recuperados 
   shape <- left_join(map, Datos)
   variables <-
     c("Fallecidos",
-      "Activos",
+      "Casos_Activos",
       "Recuperados")
   labs <- c("Fallecidos",
             "Casos activos",
@@ -27,7 +32,7 @@ AllCases <- function(fecha) {
   # See if no 0
   zeros <- c(
     sum(Datos$Fallecidos),
-    sum(Datos$Activos),
+    sum(Datos$Casos_Activos),
     sum(Datos$Recuperados)
   )
   
