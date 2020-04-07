@@ -804,3 +804,126 @@ form {
   padding-right: 0.8em;
   padding-left: 0.8em;
 }
+/* Navbar */
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+}
+
+
+/* The element at the top of the page right after the fixed navigation bar
+   MUST have sufficient top margin or else it will be covered by the bar */
+.content {
+  margin-top: 20px;
+}
+
+/* Example responsive navigation menu  */
+.fixed-nav-bar li, .fixed-nav-bar a { 
+  height: 50px;
+  line-height: 50px;
+}
+.menu {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.menu a, .menu a:visited {
+  color: #ffffff;
+}
+.menu a:hover, .menu a:target {
+  color: #ebebeb;
+}
+.menu-items {
+  display: inline-block;
+}
+.menu-items li {
+  display: inline-block;
+  padding-left:2em;
+  padding-right:2em;
+	color: #fff;
+	font-weight: 700;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.menu-items a {
+  text-decoration: none;
+}
+.sitename {
+  display: inline-block;
+  padding-left:2em;
+  padding-right:2em;
+	color: #fff;
+	font-weight: 700;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+a.sitename, a:visited.sitename {
+  color: #e0e0e0;
+}
+
+.show, .hide {
+  display: none;
+  padding-left: 15px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center left;
+  color: #dde1e2;
+}
+.show {
+  background-image: url(assets/down-arrow-icon.png);
+}
+.hide {
+  background-image: url(assets/up-arrow-icon.png);
+}
+
+@media only screen and (max-width: 800px) {
+  .menu { 
+    position: relative;
+    width: 100%;
+  }
+  .sitename {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    padding-left: 0px;
+  }
+  .menu-items {
+    display: none; 
+    width: 100%;
+    margin-top: 50px;
+    background-color: #212121;
+  }
+  .menu-items li {
+    display: block;
+    text-align: center;
+  }
+  .show, .hide {  
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .show {
+    display: inline-block;
+  }
+  .hide {
+    display: none;
+  }
+  #menu:target .show {
+    display: none;
+  }
+  #menu:target .hide, #menu:target .menu-items {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 220px) {
+  .sitename, .show, .hide {
+    font-size: 14px;
+	
+  }
+}
