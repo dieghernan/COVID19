@@ -21,8 +21,8 @@
 	<meta property="og:locale" content="es_ES" />
 	<meta name="description" content="{{ page.description | site.description | default: site.github.project_tagline }}" />
 	<meta property="og:description" content="{{ page.description | site.description | default: site.github.project_tagline }}">
-	<link rel="canonical" href="{{ site.microsite }}">
-	<meta property="og:url" content="{{ page.url | prepend: site.microsite }}">
+	<link rel="canonical" href="{{ page.url | prepend: site.github.url }}">
+	<meta property="og:url" content="{{ page.url | prepend: site.github.url }}">
 	<meta property="og:site_name" content="{{ site.title | default: site.github.repository_name }}" />
 	<meta property="og:image" content="https://dieghernan.github.io/COVID19/figs/FallecidosAct.png" />
 	<meta property="og:type" content="website" />	
