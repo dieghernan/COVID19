@@ -1,89 +1,70 @@
-RatioHosp <- function(fecha) {
+Evocasos <- function(fecha) {
   library(dplyr)
   library(sf)
   library(cartography)
   library(colorspace)
-  load("CUSTOM/Pop2019_Eurostat.RData")
-  
+
   #Hextiles
   hextiles <- st_read("CUSTOM/esp_ccaa_hexgrid.gpkg",
                       stringsAsFactors = F) %>%
     st_transform(3857)
+  #tileEsp
+  geom <- st_sfc(st_point(c(578006, 5255640)), crs = st_crs(hextiles)) %>%
+    st_buffer(150000, endCapStyle = "SQUARE")
+  
+  ES <- st_sf(ISO2="ES",
+              ISO2_Label="ES", geom, stringsAsFactors = F)
+  
+  hextiles <- rbind(hextiles %>% select(ISO2, ISO2_Label),ES)
   
   Datos <- COVIDEsp %>% filter(Fecha == fecha)
   
-  shape <- left_join(hextiles, Datos) %>%
-    left_join(EspPop2019_EUROSTAT, by = c("NUTS2" = "geo"))
+  shape <- left_join(hextiles, Datos)
   
-  shape$Hosp100000 <-
-    round(100000 * shape$Hospitalizados / shape$values, 0)
   
-  # finalshape
-  finalshape <- shape %>% select(Label = ISO2_Label,
-                                 Hosp100000)
-  
-  #A nivel nacional
-  popESP <- EspPop2019_EUROSTAT %>%
-    filter(geo == "ES") %>%
-    select(values) %>% as.integer()
-  Hosp100000 <- 100000 * sum(shape$Hospitalizados) / popESP
-  
-  df <- data.frame(Label = "ES",
-                   Hosp100000 = Hosp100000)
-  
-  geom <- st_sfc(st_point(c(578006, 5255640)), crs = 3857) %>%
-    st_buffer(150000, endCapStyle = "SQUARE")
-  
-  all <- st_sf(df, geom)
-  #Añade datos ESP
-  plotmap <- rbind(finalshape, all)
-  
-  plotmap[plotmap$Hosp100000 == 0, "Hosp100000"] <- NA
-  
-  #Plot
-  brks <- c(1, 10, 25, 50, 100, 200, 250)
+  brks <- c(-Inf,-.2,-.05, 0,.05,.2,Inf)
   palette <- divergingx_hcl(7, palette = "Geyser", alpha = 0.9)
   
   
+  
   namepng <-
-    paste0("pngs/RatioHosp_", format(unique(shape$Fecha), "%y%m%d"), ".png")
+    paste0("pngs/RatioNuevosCasos_", format(unique(shape$Fecha), "%y%m%d"), ".png")
   png(namepng,
       width = 500,
       height = 500,
       res = 96)
   par(mar = c(0, 0, 1, 0))
+  plot(st_geometry(shape), col="grey80", border=NA)
   choroLayer(
-    plotmap,
-    var = "Hosp100000",
+    shape,
+    var = "Casos_Porcvar",
     border = "grey50",
+    legend.values.rnd = 4,
     breaks = brks ,
-    col = palette[2:7],
+    col = palette,
     legend.pos = "n",
-    colNA = palette[1]
+    colNA = "grey80",
+    add=T
   )
   
   legend("topleft", format(unique(shape$Fecha), "%d %b"), bty = "n")
   legendChoro(
-    title.txt = "por 100,000 hab.",
+    title.txt = "% nuevos casos dia\nvs. % dia anterior",
     pos = "left",
     values.cex = 0.8,
     title.cex = 0.7,
     cex = 1.5,
-    breaks = brks,
-    nodata = TRUE,
-    col = palette[2:7],
-    nodata.col = palette[1],
-    nodata.txt = "0"
+    col = palette,
+    breaks = c("min","-20%","-10%","-","10%","20%","max"),
+    nodata = FALSE,
   )
   
   
-  labelLayer(plotmap %>% filter(Label != "ES"), txt = "Label")
-  labelLayer(plotmap %>% filter(Label == "ES"),
-             txt = "Label",
-             cex = 1)
+  labelLayer(shape , txt = "ISO2_Label")
+  
   
   layoutLayer(
-    title = paste0("COVID19 España: Hospitalizados por CCAA"),
+    title = paste0("COVID19 España: Evolución variación diaria de casos"),
     scale = FALSE,
     frame = FALSE,
     sources = "Datos: ISCIII, Eurostat (Poblacion a Ene2019)\n dieghernan.github.io/COVID19"

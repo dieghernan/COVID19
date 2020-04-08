@@ -5,8 +5,13 @@ library(dplyr)
 path <-
   "https://covid19.isciii.es/resources/serie_historica_acumulados.csv"
 
+
 # Procesa
 COVIDEsp <- read.csv(path, stringsAsFactors = F)
+names(COVIDEsp) <- c("CCAA.Codigo.ISO","Fecha","Casos",
+                     "Hospitalizados","UCI","Fallecidos",
+                     "Recuperados")
+
 COVIDEsp <- COVIDEsp[COVIDEsp$Fecha != "",]
 COVIDEsp$Fecha <- as.Date(COVIDEsp$Fecha,
                           format = "%d/%m/%Y")
@@ -24,7 +29,7 @@ COVIDEsp[is.na(COVIDEsp)] <- 0
 COVIDEsp$Casos_Activos <-
   COVIDEsp$Casos - COVIDEsp$Fallecidos - COVIDEsp$Recuperados
 
-COVIDEsp[COVIDEsp$CCAA.Codigo.ISO == "ME",]$CCAA.Codigo.ISO <- "ML"
+#COVIDEsp[COVIDEsp$CCAA.Codigo.ISO == "ME",]$CCAA.Codigo.ISO <- "ML"
 COVIDEsp$ISO2 <- paste0("ES-", COVIDEsp$CCAA.Codigo.ISO)
 
 COVIDEsp <- COVIDEsp %>% mutate(CCAA.Codigo.ISO = "ES",

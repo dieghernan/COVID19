@@ -4,14 +4,12 @@ subtitle: "Visualización de datos"
 output: 
   md_document:
     preserve_yaml: true
-    toc: true
-    toc_depth: 1
 ---
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://dieghernan.github.io/COVID19/" data-via="dhernangomez" data-hashtags="COVID19España" data-show-count="true">Tweet</a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-*Datos publicados a 05 abril*
+*Datos publicados a 07 abril*
 
 El proyecto
 -----------
@@ -90,4 +88,4 @@ Evolución
 
 ------------------------------------------------------------------------
 
-*Generado 06 abril 2020 12:38:30 CEST con* **R-Studio**.
+*Generado 08 abril 2020 12:05:15 CEST con* **R-Studio**.

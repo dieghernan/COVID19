@@ -19,10 +19,10 @@
 	<title>{{ site.github.project_tagline }} | {{ site.title | default: site.github.repository_name }}</title>
 	<meta property="og:title" content="{{ site.title | default: site.github.repository_name }}" />
 	<meta property="og:locale" content="es_ES" />
-	<meta name="description" content="{{ site.description | default: site.github.project_tagline }}" />
-	<meta property="og:description" content="{{ site.description | default: site.github.project_tagline }}">
+	<meta name="description" content="{{ page.description | site.description | default: site.github.project_tagline }}" />
+	<meta property="og:description" content="{{ page.description | site.description | default: site.github.project_tagline }}">
 	<link rel="canonical" href="{{ site.microsite }}">
-	<meta property="og:url" content="{{ site.microsite }}">
+	<meta property="og:url" content="{{ page.url | prepend: site.microsite }}">
 	<meta property="og:site_name" content="{{ site.title | default: site.github.repository_name }}" />
 	<meta property="og:image" content="https://dieghernan.github.io/COVID19/figs/FallecidosAct.png" />
 	<meta property="og:type" content="website" />	
@@ -33,7 +33,7 @@
 	<meta name="twitter:site" content="@dhernangomez" />
 	<meta name="twitter:creator" content="@dhernangomez" />
 	<meta name="twitter:title" content="{{ site.title | default: site.github.repository_name }}" />	
-	<meta name="twitter:description" content="{{ site.description | default: site.github.project_tagline }}">	
+	<meta name="twitter:description" content="{{ page.description | site.description | default: site.github.project_tagline }}">	
 	<meta name="twitter:image" content="https://dieghernan.github.io/COVID19/figs/FallecidosAct.png" />    
 	
 	{% if site.google_analytics %}
@@ -62,14 +62,26 @@
 	{% endif %}
   </head>
   <body style="font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif">
+  <nav class="fixed-nav-bar">
+	<div id="menu" class="outer menu">
+	<!-- Example responsive navigation menu  -->
+	<a class="sitename" href="https://dieghernan.github.io/COVID19">Home
+
+	</a>
+	<a class="show" href="#menu"><i class="fas fa-bars"></i></a><a class="hide" href="#hidemenu"><i class="fas fa-bars"></i></a>
+		<ul class="menu-items">
+			<li><a href="https://dieghernan.github.io/COVID19/Galeria">Galería</a></li>
+			<li><a href="https://github.com/dieghernan/COVID19/">
+GitHub Repo <span class="fa-stack">
+				<i class="fab fa-github fa-stack-1x fa-lg" aria-hidden="true"></i>
+				</span><span class="sr-only">GitHub</span>
+			</a>
+		</ul>
+	</div>
+</nav>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-		<a id="forkme_banner2" style="background-color:black" href="{{ site.github.repository_url }}">
-			<span class="fa-stack">
-				<i class="fab fa-github fa-stack-1x fa-2x"></i>
-			</span><span class="sr-only">GitHub</span>GitHub Repo
-		</a>
         <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
 		<h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
         </header>
