@@ -41,7 +41,12 @@ description: "Galería"
 	{% assign image_files = site.static_files | where: "image", true | sort: 'basename' | reverse | where_exp:"item",
 "item.basename contains 'Casos_'"  %}
 	{% for myimage in image_files %}
-	 	 <img class="item" src="{{ myimage.path | prepend: site.microsite }}">
+    {% if myimage.basename contains 'Ratio' %}
+      {% assign exclude = true %}
+    {% endif %}
+    {% if exclude == false %}
+      <img class="item" src="{{ myimage.path | prepend: site.microsite }}">
+    {% endif %}
 	{% endfor %}	
 </div>
 
