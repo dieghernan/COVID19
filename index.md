@@ -9,7 +9,7 @@ output:
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://dieghernan.github.io/COVID19/" data-via="dhernangomez" data-hashtags="COVID19España" data-show-count="true">Tweet</a>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-*Datos publicados a 07 abril*
+*Datos publicados a 08 abril*
 
 El proyecto
 -----------
@@ -88,4 +88,4 @@ Evolución
 
 ------------------------------------------------------------------------
 
-*Generado 08 abril 2020 12:05:15 CEST con* **R-Studio**.
+*Generado 10 abril 2020 10:02:38 CEST con* **R-Studio**.
