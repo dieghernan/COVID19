@@ -35,7 +35,7 @@ footer:
 
 
 googlefonts:
- - url : "https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&display=swap"
+ - url : "https://fonts.googleapis.com/css2?family=Lato&family=Amiri&display=swap"
 
 chulapa-skin: 
   autothemer  :  true 
@@ -43,7 +43,7 @@ chulapa-skin:
     primary   :  black
     navbar-chulapa-text-color: white
     font-family-base: "Lato, sans-serif"
-    headings-font-family: "Noto Sans, serif"
+    headings-font-family: "Amiri, serif"
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 
