@@ -68,6 +68,17 @@ defaults:
       path: "assets/png/Contagios"
     values:
       image_col         : contagios
+  -
+    scope:
+      path: "assets/png/Fallecidos"
+    values:
+      image_col         : fallecidos
+   -
+    scope:
+      path: "assets/png/RatioHosp"
+    values:
+      image_col         : hospitalizados     
+      
 
 # XX. Other settings - no need to modify
 # HTML Compression

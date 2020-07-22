@@ -12,6 +12,18 @@ h_max: 2
 
 - - - 
 
+## Evolución Hospitalizados por 100.000 habitantes
+
+{% include_cached snippets/masonry.html internal="hospitalizados" index_sort="basename" %}
+
+- - -
+
 ## Evolución Contagios en España
 
 {% include_cached snippets/masonry.html internal="contagios" index_sort="basename" %}
+
+- - - 
+
+## Evolución Fallecidos en España
+
+{% include_cached snippets/masonry.html internal="fallecidos" index_sort="basename" %}
