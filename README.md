@@ -3,6 +3,9 @@
 En la web: https://dieghernan.github.io/COVID19/
 
 ## El proyecto
+> **Proyecto obsoleto**: Debido a los cambios en el aprovisionamiento de la información, este proyecto se considera obsoleto y no recibirá mas
+actualizaciones. 
+
 
 Projecto Open Source de visualización geográfica de la evolución de la
 pandemia COVID19 en España. Se proporcionan gráficos estáticos en
