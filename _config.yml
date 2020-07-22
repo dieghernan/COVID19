@@ -76,6 +76,7 @@ exclude:
   - README.md
   - Gemfile
   - vendor
+  - index.Rmd
 
 include:
  - _pages
