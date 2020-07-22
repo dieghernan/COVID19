@@ -55,7 +55,11 @@ defaults:
       layout: "default"
       header_type: "hero"
       show_sociallinks  : true
-
+  -
+    scope:
+      path: "assets/png/Casos"
+    values:
+      image_col         : casos
 
 # XX. Other settings - no need to modify
 # HTML Compression
@@ -80,8 +84,6 @@ exclude:
   - R/
   - assets/data/
 
-include:
- - _pages
 
 # Conversion
 markdown: kramdown
