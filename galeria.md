@@ -2,6 +2,7 @@
 title: Galería
 excerpt: Galería de imágenes 
 header_type: base
+permalink: /Galeria
 show_toc: true
 h_max: 2
 ---

@@ -16,7 +16,7 @@ navbar:
     title   :  Inicio
   nav:
   - title: Galería
-    url: /galeria	
+    url: /Galeria
 
 #Social links to be placed on your site footer
 footer:
