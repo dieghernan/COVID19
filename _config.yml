@@ -60,6 +60,11 @@ defaults:
       path: "assets/png/Casos"
     values:
       image_col         : casos
+-
+    scope:
+      path: "assets/png/Contagios"
+    values:
+      image_col         : contagios
 
 # XX. Other settings - no need to modify
 # HTML Compression
