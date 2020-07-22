@@ -1,15 +1,15 @@
 ---
 title: "COVID19 en España"
 subtitle: "Visualización de datos"
+show_toc: true
+h_max: 2
+header_img: "assets/img/header.png"
 output: 
   md_document:
     preserve_yaml: true
 ---
 
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://dieghernan.github.io/COVID19/" data-via="dhernangomez" data-hashtags="COVID19España" data-show-count="true">Tweet</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-*Datos publicados a 09 abril*
+*Datos publicados a 09 April*
 
 El proyecto
 -----------
@@ -53,39 +53,39 @@ administradores a través de este enlace:
 
 ##### Total Casos por situación en España
 
-![](./figs/CasosAct.png)
+![](./assets/CasosAct.png)
 
 ##### Hospitalizados por 100.000 habitantes
 
-![](./figs/RatioHospAct.png)
+![](./assets/RatioHospAct.png)
 
 ##### Contagios en España
 
-![](./figs/ContagiosAct.png)
+![](./assets/ContagiosAct.png)
 
 ##### Fallecidos en España
 
-![](./figs/FallecidosAct.png)
+![](./assets/FallecidosAct.png)
 
 Evolución
 ---------
 
 ##### Evolución Casos en España
 
-![](./figs/Casos.gif)
+![](../assets/Casos.gif)
 
 ##### Evolución Hospitalizados por 100.000 habitantes
 
-![](./figs/RatioHosp.gif)
+![](../assets/RatioHosp.gif)
 
 ##### Evolución Contagios en España
 
-![](./figs/Contagios.gif)
+![](../assets/Contagios.gif)
 
 ##### Evolución Fallecidos en España
 
-![](./figs/Fallecidos.gif)
+![](./assets/Fallecidos.gif)
 
 ------------------------------------------------------------------------
 
-*Generado 10 abril 2020 11:20:35 CEST con* **R-Studio**.
+*Generado 22 July 2020 15:55:48 CEST con* **R-Studio**.
