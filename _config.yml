@@ -11,6 +11,7 @@ author:
 gtag_id                 :  UA-139034853-4
 
 navbar:
+  expand: sm
   brand:
     title   :  Inicio
   nav:
