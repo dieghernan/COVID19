@@ -77,6 +77,8 @@ exclude:
   - Gemfile
   - vendor
   - index.Rmd
+  - R/
+  - assets/data/
 
 include:
  - _pages
