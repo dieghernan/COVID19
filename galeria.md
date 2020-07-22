@@ -1,6 +1,7 @@
 ---
 title: Galería
 excerpt: Galería de imágenes 
+header_type: base
 show_toc: true
 h_max: 2
 ---
