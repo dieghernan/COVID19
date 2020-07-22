@@ -60,7 +60,7 @@ defaults:
       path: "assets/png/Casos"
     values:
       image_col         : casos
--
+  -
     scope:
       path: "assets/png/Contagios"
     values:
