@@ -34,6 +34,12 @@ relacionado con este proyecto, puedes ponerte en contacto con los
 administradores a través de este enlace:
 [Buzón](https://github.com/dieghernan/COVID19/issues/new/choose).
 
-![](./figs/Casos.gif)![](./figs/RatioHosp.gif)![](./figs/Contagios.gif)![](./figs/Fallecidos.gif)
+![Casos](./assets/Casos.gif)
+
+![Ratio Hospitalizados](./assets/RatioHosp.gif)
+
+![Contagios](./assets/Contagios.gif)
+
+![Fallecidos](./assets/Fallecidos.gif)
 
 
