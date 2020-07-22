@@ -73,7 +73,7 @@ defaults:
       path: "assets/png/Fallecidos"
     values:
       image_col         : fallecidos
-   -
+  -
     scope:
       path: "assets/png/RatioHosp"
     values:
