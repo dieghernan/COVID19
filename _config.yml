@@ -37,14 +37,15 @@ footer:
 
 
 googlefonts:
- - url : "https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@500&display=swap"
+ - url : "https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&display=swap"
 
 chulapa-skin: 
   autothemer  :  true 
   vars        :    
     primary   :  black
+    navbar-chulapa-text-color: white
     font-family-base: "Lato, sans-serif"
-    headings-font-family: "Playfair Display, serif"
+    headings-font-family: "Noto Sans, serif"
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 
