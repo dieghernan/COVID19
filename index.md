@@ -19,8 +19,7 @@ la información, este proyecto se considera obsoleto y no recibirá mas
 actualizaciones. 
 {: .alert .alert-danger .p-3 .mx-2 mb-3}
 
-*Datos publicados a {% include snippets/datetranslate.html date='09
-April' %}*
+*Datos publicados a 09 abril 2020*
 
 El proyecto
 -----------
@@ -99,5 +98,5 @@ Evolución
 
 ------------------------------------------------------------------------
 
-*Generado {% include snippets/datetranslate.html date='22 July 2020
-17:27:34 CEST' %} con* **R-Studio**.
+*Generado {% include snippets/datetranslate.html  date="22 July 2020
+17:27:34 CEST" %} con* **R-Studio**.
