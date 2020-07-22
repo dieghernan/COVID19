@@ -80,6 +80,7 @@ defaults:
       image_col         : hospitalizados     
       
 
+
 # XX. Other settings - no need to modify
 # HTML Compression
 # - https://jch.penibelst.de/
