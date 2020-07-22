@@ -43,8 +43,8 @@ chulapa-skin:
   autothemer  :  true 
   vars        :    
     primary   :  black
-    font-family-base: 'Lato', sans-serif
-    headings-font-family: 'Playfair Display', serif
+    font-family-base: "Lato, sans-serif"
+    headings-font-family: "Playfair Display, serif"
     
 # D. Jekyll Defaults and collections: see https://jekyllrb.com/
 
