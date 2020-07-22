@@ -13,16 +13,15 @@ output:
   md_document:
     preserve_yaml: true
 ---
+*Datos publicados a 09 abril 2020*
+
+El proyecto
+-----------
 
 **Proyecto obsoleto**: Debido a los cambios en el aprovisionamiento de
 la información, este proyecto se considera obsoleto y no recibirá mas
 actualizaciones. 
 {: .alert .alert-danger .p-3 .mx-2 mb-3}
-
-*Datos publicados a 09 abril 2020*
-
-El proyecto
------------
 
 Projecto Open Source de visualización geográfica de la evolución de la
 pandemia COVID19 en España. Se proporcionan gráficos estáticos en

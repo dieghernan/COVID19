@@ -8,7 +8,7 @@ Projecto Open Source de visualización geográfica de la evolución de la
 pandemia COVID19 en España. Se proporcionan gráficos estáticos en
 formato `png` (500x500 pixels) y visualizaciones de evolución en formato
 `gif`. El histórico de `png` diarios se encuentran en [este
-repositorio](https://github.com/dieghernan/COVID19/tree/master/pngs).
+repositorio](https://github.com/dieghernan/COVID19/tree/master/assets/png).
 
 **Fuente de datos**
 
