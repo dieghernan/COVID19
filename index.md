@@ -6,10 +6,7 @@ output:
     preserve_yaml: true
 ---
 
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-url="https://dieghernan.github.io/COVID19/" data-via="dhernangomez" data-hashtags="COVID19España" data-show-count="true">Tweet</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-*Datos publicados a 09 abril*
+*Datos publicados a 09 April*
 
 El proyecto
 -----------
@@ -57,7 +54,7 @@ administradores a través de este enlace:
 
 ##### Hospitalizados por 100.000 habitantes
 
-![](./figs/RatioHospAct.png)
+![](./assets/RatioHospAct.png)
 
 ##### Contagios en España
 
@@ -88,4 +85,4 @@ Evolución
 
 ------------------------------------------------------------------------
 
-*Generado 10 abril 2020 11:20:35 CEST con* **R-Studio**.
+*Generado 22 July 2020 13:35:45 CEST con* **R-Studio**.
