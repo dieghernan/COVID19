@@ -5,7 +5,7 @@ Evocasos <- function(fecha) {
   library(colorspace)
 
   #Hextiles
-  hextiles <- st_read("CUSTOM/esp_ccaa_hexgrid.gpkg",
+  hextiles <- st_read("assets/data/esp_ccaa_hexgrid.gpkg",
                       stringsAsFactors = F) %>%
     st_transform(3857)
   #tileEsp
@@ -28,7 +28,7 @@ Evocasos <- function(fecha) {
   
   
   namepng <-
-    paste0("pngs/RatioNuevosCasos_", format(unique(shape$Fecha), "%y%m%d"), ".png")
+    paste0("assets/png/RatioNuevosCasos/RatioNuevosCasos_", format(unique(shape$Fecha), "%y%m%d"), ".png")
   png(namepng,
       width = 500,
       height = 500,

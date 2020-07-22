@@ -6,11 +6,11 @@ AllCases <- function(fecha) {
   library(cartography)
   library(colorspace)
   
-  load("CUSTOM/COVIDEsp.Rdata")
+  load("./assets/data//COVIDEsp.Rdata")
   
   
   #shp
-  map <- st_read("CUSTOM/esp_ccaa.gpkg", stringsAsFactors = FALSE)
+  map <- st_read("./assets/data//esp_ccaa.gpkg", stringsAsFactors = FALSE)
   Datos <- COVIDEsp %>% filter(Fecha == fecha)
   shape <- left_join(map, Datos)
   variables <-
@@ -30,7 +30,7 @@ AllCases <- function(fecha) {
   
   if (length(zeros[zeros > 0]) > 1) {
     namepng <-
-      paste0("pngs/Casos_", format(unique(shape$Fecha), "%y%m%d"), ".png")
+      paste0("assets/png/Casos/Casos_", format(unique(shape$Fecha), "%y%m%d"), ".png")
     png(namepng,
         width = 500,
         height = 500,

@@ -8,9 +8,9 @@ Fallecidos <- function(fecha) {
   
   
   #shp
-  map <- st_read("CUSTOM/esp_ccaa.gpkg", stringsAsFactors = FALSE)
+  map <- st_read("./assets/data/esp_ccaa.gpkg", stringsAsFactors = FALSE)
   
-  load("CUSTOM/COVIDEsp.Rdata")
+  load("./assets/data/COVIDEsp.Rdata")
   
   Datos <- COVIDEsp %>% filter(Fecha == fecha)
   shape <- left_join(map, Datos)
@@ -18,7 +18,7 @@ Fallecidos <- function(fecha) {
   col <- scales::alpha("red2", 0.8)
   
   namepng <-
-    paste0("pngs/Fallecidos_", format(unique(shape$Fecha), "%y%m%d"), ".png")
+    paste0("./assets/png/Fallecidos/Fallecidos_", format(unique(shape$Fecha), "%y%m%d"), ".png")
   png(
     namepng,
     width = 500,

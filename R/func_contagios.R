@@ -6,10 +6,10 @@ Contagios <- function(fecha) {
   library(cartography)
   library(colorspace)
   
-  load("CUSTOM/COVIDEsp.Rdata")
+  load("assets/data//COVIDEsp.Rdata")
   
   #shp
-  map <- st_read("CUSTOM/esp_ccaa.gpkg", stringsAsFactors = FALSE)
+  map <- st_read("assets/data//esp_ccaa.gpkg", stringsAsFactors = FALSE)
   Datos <- COVIDEsp %>% filter(Fecha == fecha)
   shape <- left_join(map, Datos)
 
@@ -18,7 +18,7 @@ Contagios <- function(fecha) {
 
   
   namepng <-
-    paste0("pngs/Contagios_", format(unique(shape$Fecha), "%y%m%d"), ".png")
+    paste0("assets/png/Contagios/Contagios_", format(unique(shape$Fecha), "%y%m%d"), ".png")
   png(
     namepng,
     width = 500,
