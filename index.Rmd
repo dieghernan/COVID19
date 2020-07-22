@@ -5,13 +5,18 @@ show_toc: true
 h_max: 2
 header_img: "assets/img/header.png"
 permalink: "/"
-excerpt: Projecto Open Source de visualizacion geografica de la evolucion de la
-pandemia COVID19 en España
+excerpt: Projecto Open Source de visualización geográfica de la evolución de la pandemia COVID19 en España
+project_links:
+    - url: https://github.com/dieghernan/COVID19/
+      icon: fab fa-github
+      label: Ver en Github
 output: 
   md_document:
     preserve_yaml: true
 ---
 
+**Proyecto obsoleto**: Debido a los cambios en el aprovisionamiento de la información, este proyecto se considera obsoleto y no recibirá mas actualizaciones.
+{: .alert .alert-warning .p-3 .mx-2 mb-3}
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message = FALSE,
@@ -28,7 +33,7 @@ last <- max(COVIDEsp$Fecha)
 f <- format(max(COVIDEsp$Fecha+1), "%d %B")
 ```
 
-*Datos publicados a `r f`*
+*Datos publicados a {% include snippets/datetranslate.html  date="`r f`" %}*
 
 ## El proyecto
 
@@ -165,5 +170,5 @@ image_write(gif, "./assets/RatioNuevosCasos.gif")
 
 ---
 
-*Generado `r format(Sys.time(), "%d %B %Y %H:%M:%S", usetz = TRUE, tz="CET")` con* **R-Studio**.
+*Generado {% include snippets/datetranslate.html  date="`r format(Sys.time(), "%d %B %Y %H:%M:%S", usetz = TRUE, tz="CET")`" %} con* **R-Studio**.
 

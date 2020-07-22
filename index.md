@@ -5,14 +5,22 @@ show_toc: true
 h_max: 2
 header_img: "assets/img/header.png"
 permalink: "/"
-excerpt: Projecto Open Source de visualizacion geografica de la evolucion de la
-pandemia COVID19 en España
+excerpt: Projecto Open Source de visualización geográfica de la evolución de la pandemia COVID19 en España
+project_links:
+    - url: https://github.com/dieghernan/COVID19/
+      icon: fab fa-github
+      label: Ver en Github
 output: 
   md_document:
     preserve_yaml: true
 ---
 
-*Datos publicados a 09 April*
+**Proyecto obsoleto**: Debido a los cambios en el aprovisionamiento de
+la información, este proyecto se considera obsoleto y no recibirá mas
+actualizaciones. {: .alert .alert-warning .p-3 .mx-2 mb-3}
+
+*Datos publicados a {% include snippets/datetranslate.html date='09
+April' %}*
 
 El proyecto
 -----------
@@ -75,15 +83,15 @@ Evolución
 
 ##### Evolución Casos en España
 
-![](../assets/Casos.gif)
+![](./assets/Casos.gif)
 
 ##### Evolución Hospitalizados por 100.000 habitantes
 
-![](../assets/RatioHosp.gif)
+![](./assets/RatioHosp.gif)
 
 ##### Evolución Contagios en España
 
-![](../assets/Contagios.gif)
+![](./assets/Contagios.gif)
 
 ##### Evolución Fallecidos en España
 
@@ -91,4 +99,5 @@ Evolución
 
 ------------------------------------------------------------------------
 
-*Generado 22 July 2020 15:55:48 CEST con* **R-Studio**.
+*Generado {% include snippets/datetranslate.html date='22 July 2020
+17:27:34 CEST' %} con* **R-Studio**.

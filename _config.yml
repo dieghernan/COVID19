@@ -12,12 +12,10 @@ gtag_id                 :  UA-139034853-4
 
 navbar:
   brand:
-    title   :  Portada
+    title   :  Inicio
   nav:
   - title: Galería
     url: /galeria	
-  - title: En Github
-    url: https://github.com/dieghernan/COVID19/
 
 #Social links to be placed on your site footer
 footer:
