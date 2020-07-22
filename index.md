@@ -4,7 +4,7 @@ subtitle: "Visualización de datos"
 show_toc: true
 h_max: 2
 header_img: "assets/img/header.png"
-permalink: "/"
+permalink: "/index.html"
 excerpt: Projecto Open Source de visualización geográfica de la evolución de la pandemia COVID19 en España
 project_links:
     - url: https://github.com/dieghernan/COVID19/
@@ -17,7 +17,8 @@ output:
 
 **Proyecto obsoleto**: Debido a los cambios en el aprovisionamiento de
 la información, este proyecto se considera obsoleto y no recibirá mas
-actualizaciones. {: .alert .alert-warning .p-3 .mx-2 mb-3}
+actualizaciones. 
+{: .alert .alert-warning .p-3 .mx-2 mb-3}
 
 *Datos publicados a 09 abril 2020*
 
