@@ -1,5 +1,4 @@
 remote_theme: dieghernan/chulapa
-
 locale                  : es-ES   #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
 title                   : COVID19 en España   #default["repository_name"]
 timezone                : "Europe/Madrid"
