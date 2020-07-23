@@ -57,7 +57,7 @@ defaults:
       path: ""
     values:
       layout: "default"
-      header_type: "hero"
+      header_type: "base"
       show_sociallinks  : true
   -
     scope:
