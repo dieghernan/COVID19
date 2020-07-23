@@ -36,7 +36,7 @@ footer:
 
 
 googlefonts:
- - url : "https://fonts.googleapis.com/css2?family=Varta&family=Amiri&display=swap"
+ - url : "https://fonts.googleapis.com/css2?family=Varta&family=Lora&display=swap"
 
 chulapa-skin: 
   autothemer  :  true 
@@ -44,7 +44,7 @@ chulapa-skin:
     primary   :  black
     navbar-chulapa-text-color: white
     font-family-base: "Varta, sans-serif"
-    headings-font-family: "Amiri, serif"
+    headings-font-family: "Lora, serif"
     enable-rounded: "false"
     navbar-chulapa-toggler-color: "#F5F5F5"
     navbar-chulapa-toggler-border-color: invisible
