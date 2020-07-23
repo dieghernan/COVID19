@@ -1,6 +1,6 @@
 # COVID19 en España
 
-En la web: https://dieghernan.github.io/COVID19/
+En la web: https://dieghernan.github.io/COVID19/ 
 
 ## El proyecto
 > **Proyecto obsoleto**: Debido a los cambios en el aprovisionamiento de la información, este proyecto se considera obsoleto y no recibirá mas
