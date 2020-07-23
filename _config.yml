@@ -1,15 +1,12 @@
 remote_theme: dieghernan/chulapa
-
-locale                  : es-ES   #default["en-US"] format language-TERRITORY , e.g fr, en-GB, es-MX, pt-BR
-title                   : COVID19 en España   #default["repository_name"]
+locale                  : es-ES   
+title                   : COVID19 en España
 timezone                : "Europe/Madrid"
 og_image                : "assets/img/header.png"
-
 author:
   name                  :  dieghernan
   location              :  "Madrid, España"
 gtag_id                 :  UA-139034853-4
-
 navbar:
   expand: always
   brand:
@@ -17,8 +14,6 @@ navbar:
   nav:
   - title: Galería
     url: /Galeria
-
-#Social links to be placed on your site footer
 footer:
   links:
     - label: "StackOverflow"
@@ -33,10 +28,8 @@ footer:
     - label: "RPubs"
       icon: "fab fa-r-project"
       url: "https://rpubs.com/dieghernan"
-
 googlefonts:
  - url : "https://fonts.googleapis.com/css2?family=Varta&family=Lora&display=swap"
-
 chulapa-skin: 
   autothemer  :  true 
   vars        :    
@@ -44,12 +37,8 @@ chulapa-skin:
     navbar-chulapa-text-color: white
     font-family-base: "Varta, sans-serif"
     headings-font-family: "Lora, serif"
-    enable-rounded: "false"
     navbar-chulapa-toggler-color: "#F5F5F5"
     navbar-chulapa-toggler-border-color: invisible
-    
-# D. Jekyll Defaults and collections: see https://jekyllrb.com/
-
 defaults:
   -
     scope:
@@ -78,23 +67,14 @@ defaults:
       path: "assets/png/RatioHosp"
     values:
       image_col         : hospitalizados     
-      
-
-
-# XX. Other settings - no need to modify
-# HTML Compression
-# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   blanklines: true
-
 plugins:
   - jekyll-github-metadata
   - jekyll-paginate
   - jekyll-include-cache
   - jekyll-sitemap
-
-# Exclude these files from production site
 exclude:
   - README.md
   - Gemfile
@@ -102,16 +82,13 @@ exclude:
   - index.Rmd
   - R/
   - assets/data/
-
-
-# Conversion
+include:
+  - _pages
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -122,8 +99,6 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
-# Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed
