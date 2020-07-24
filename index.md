@@ -7,7 +7,7 @@ header_img: "assets/img/header.png"
 excerpt: Projecto Open Source de visualización geográfica de la evolución de la pandemia COVID19 en España
 project_links:
     - url: https://github.com/dieghernan/COVID19/
-      icon: fab fa-github
+      icon: fab fa-github my-2
       label: Ver en Github
 output: 
   md_document:
