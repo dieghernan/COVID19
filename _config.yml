@@ -82,6 +82,7 @@ exclude:
   - index.Rmd
   - R/
   - assets/data/
+  
 include:
   - _pages
 markdown: kramdown
