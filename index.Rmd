@@ -1,22 +1,18 @@
 ---
-title: "COVID19 en España"
-subtitle: "Visualización de datos"
+title: “COVID19 en España”
+subtitle: “Visualización de datos”
 show_toc: true
 h_max: 2
-header_img: "assets/img/header.png"
-permalink: "/"
+header_img: “assets/img/header.png”
 excerpt: Projecto Open Source de visualización geográfica de la evolución de la pandemia COVID19 en España
 project_links:
     - url: https://github.com/dieghernan/COVID19/
-      icon: fab fa-github
+      icon: fab fa-github my-2
       label: Ver en Github
 output: 
   md_document:
     preserve_yaml: true
 ---
-
-**Proyecto obsoleto**: Debido a los cambios en el aprovisionamiento de la información, este proyecto se considera obsoleto y no recibirá mas actualizaciones.
-{: .alert .alert-warning .p-3 .mx-2 mb-3}
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message = FALSE,
@@ -37,7 +33,17 @@ f <- format(max(COVIDEsp$Fecha+1), "%d %B")
 
 ## El proyecto
 
-Projecto Open Source de visualización geográfica de la evolución de la pandemia COVID19 en España. Se proporcionan gráficos estáticos en formato `png` (500x500 pixels) y visualizaciones de evolución en formato `gif`. La página se actualiza una vez al día y muestra los mapas más recientes, el histórico de `png` diarios se encuentran en [este repositorio](https://github.com/dieghernan/COVID19/tree/master/pngs).
+**Proyecto obsoleto**: Debido a los cambios en el aprovisionamiento de
+la información, este proyecto se considera obsoleto y no recibirá mas
+actualizaciones. 
+{: .alert .alert-danger .p-3 .mx-2 mb-3}
+
+Projecto Open Source de visualización geográfica de la evolución de la
+pandemia COVID19 en España. Se proporcionan gráficos estáticos en
+formato `png` (500x500 pixels) y visualizaciones de evolución en formato
+`gif`. La página se actualiza una vez al día y muestra los mapas más
+recientes, el histórico de `png` diarios se encuentran en [este
+repositorio](https://github.com/dieghernan/COVID19/tree/master/assets/png).
 
 - [Últimos datos](#últimos-datos)
 - [Evolución](#evolución)

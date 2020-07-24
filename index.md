@@ -13,6 +13,7 @@ output:
   md_document:
     preserve_yaml: true
 ---
+
 *Datos publicados a 09 abril 2020*
 
 El proyecto
@@ -28,7 +29,7 @@ pandemia COVID19 en España. Se proporcionan gráficos estáticos en
 formato `png` (500x500 pixels) y visualizaciones de evolución en formato
 `gif`. La página se actualiza una vez al día y muestra los mapas más
 recientes, el histórico de `png` diarios se encuentran en [este
-repositorio](https://github.com/dieghernan/COVID19/tree/master/pngs).
+repositorio](https://github.com/dieghernan/COVID19/tree/master/assets/png).
 
 -   [Últimos datos](#últimos-datos)
 -   [Evolución](#evolución)
