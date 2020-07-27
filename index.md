@@ -47,7 +47,7 @@ repositorio](https://github.com/dieghernan/COVID19/tree/master/assets/png).
 
 **Licencia de uso**
 
-Projecto generado bajo [**MIT License**](./LICENSE). Se permite la
+Projecto generado bajo [**MIT License**](https://github.com/dieghernan/COVID19/blob/master/LICENSE). Se permite la
 reutilización siempre y cuando se cite a este repositorio como fuente.
 
 **Buzón de sugerencias**

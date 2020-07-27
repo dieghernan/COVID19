@@ -82,6 +82,7 @@ exclude:
   - index.Rmd
   - R/
   - assets/data/
+  - LICENSE
   
 include:
   - _pages
