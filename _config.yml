@@ -30,9 +30,7 @@ footer:
     - label: "RPubs"
       icon: "fab fa-r-project"
       url: "https://rpubs.com/dieghernan"
-    - label: "My blog"
-      icon: "fas fa-blog"
-      url: "https://dieghernan.github.io/"
+
 googlefonts:
  - url : "https://fonts.googleapis.com/css2?family=Varta&family=Lora&display=swap"
 chulapa-skin: 
