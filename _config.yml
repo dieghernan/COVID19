@@ -6,7 +6,7 @@ og_image                : "assets/img/header.png"
 author:
   name                  :  dieghernan
   location              :  "Madrid, España"
-gtag_id                 :  UA-139034853-4
+gtag_id                 :  UA-139034853-3
 navbar:
   expand: always
   brand:
