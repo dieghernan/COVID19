@@ -1,14 +1,14 @@
 ---
-title: “COVID19 en España”
-subtitle: “Visualización de datos”
+title: "COVID-19 en España"
+subtitle: "Archivo de visualizaciones históricas"
 show_toc: true
 h_max: 2
-header_img: “assets/img/header.png”
-excerpt: Projecto Open Source de visualización geográfica de la evolución de la pandemia COVID19 en España
+header_img: "assets/img/header.png"
+excerpt: Mapas y gráficos históricos sobre la COVID-19 en España. Proyecto sin actualizaciones.
 project_links:
     - url: https://github.com/dieghernan/COVID19/
       icon: fab fa-github my-2
-      label: Ver en Github
+      label: Ver en GitHub
 output: 
   md_document:
     preserve_yaml: true
@@ -34,19 +34,21 @@ f <- format(max(COVIDEsp$Fecha+1), "%d %B")
 ## El proyecto
 
 **Proyecto obsoleto**: Debido a los cambios en el aprovisionamiento de
-la información, este proyecto se considera obsoleto y no recibirá mas
+la información, este proyecto se considera obsoleto y no recibirá más
 actualizaciones. 
 {: .alert .alert-danger .p-3 .mx-2 mb-3}
 
-Projecto Open Source de visualización geográfica de la evolución de la
-pandemia COVID19 en España. Se proporcionan gráficos estáticos en
-formato `png` (500x500 pixels) y visualizaciones de evolución en formato
-`gif`. La página se actualiza una vez al día y muestra los mapas más
-recientes, el histórico de `png` diarios se encuentran en [este
+Proyecto de código abierto de visualización geográfica de la evolución de la
+pandemia COVID-19 en España. Se proporcionan gráficos estáticos en
+formato PNG (500 × 500 píxeles) y visualizaciones de evolución en formato
+GIF. La página conserva mapas históricos y ya no se actualiza. El archivo de
+imágenes PNG diarias se encuentra en [este
 repositorio](https://github.com/dieghernan/COVID19/tree/master/assets/png).
 
-- [Últimos datos](#últimos-datos)
+- [Datos históricos](#últimos-datos)
 - [Evolución](#evolución)
+
+[Consultar los datos históricos del repositorio](https://github.com/dieghernan/COVID19/tree/master/assets/data).
 
 **Fuente de datos**
 
@@ -56,16 +58,14 @@ repositorio](https://github.com/dieghernan/COVID19/tree/master/assets/png).
 
 **Licencia de uso**
 
-Projecto generado bajo [**MIT License**](./LICENSE). Se permite la reutilización siempre y cuando se cite a este repositorio como fuente.
+Proyecto generado bajo [**MIT License**](./LICENSE). Se permite la reutilización siempre y cuando se cite a este repositorio como fuente.
 
 **Buzón de sugerencias**
 
 Este proyecto se plantea como un proyecto colaborativo. Para sugerencias de nuevas visualizaciones, errores en los datos o cualquier otro asunto relacionado con este proyecto, puedes ponerte en contacto con los administradores a través de este enlace: [Buzón](https://github.com/dieghernan/COVID19/issues/new/choose).
 
-
-
-## Últimos datos
-
+## Datos históricos
+{: id="últimos-datos"}
 
 ```{r actualiza, message=FALSE, warning=FALSE, include=FALSE}
 source("./R/func_ratiohosp.R", encoding = "UTF-8")
@@ -79,7 +79,6 @@ source("./R/func_evocasos.R", encoding = "UTF-8")
 #    RatioHosp(allfechas[j])
 #  }
 process <- allfechas[allfechas >= stored]
-
 
 for (i in 1:length(process)) {
   RatioHosp(process[i])
@@ -105,21 +104,23 @@ file.copy(fpng, "./assets/RatioNuevosCasosAct.png", overwrite = TRUE)
 
 ```
 
-##### Total Casos por situación en España
+### Casos por situación en España
+{: id="total-casos-por-situación-en-españa"}
 
-![](./assets/CasosAct.png)
+![Mapa histórico de casos de COVID-19 por comunidad autónoma, con recuperados, casos activos y fallecidos. La imagen muestra el 8 de abril de 2020.](./assets/CasosAct.png)
 
-##### Hospitalizados por 100.000 habitantes
+### Hospitalizaciones por 100.000 habitantes
+{: id="hospitalizados-por-100000-habitantes"}
 
-![](./assets/RatioHospAct.png)
+![Mapa histórico de hospitalizaciones por 100.000 habitantes en España.](./assets/RatioHospAct.png)
 
-##### Contagios en España
+### Contagios en España
 
-![](./assets/ContagiosAct.png)
+![Mapa histórico de contagios de COVID-19 en España.](./assets/ContagiosAct.png)
 
-##### Fallecidos en España
+### Fallecidos en España
 
-![](./assets/FallecidosAct.png)
+![Mapa histórico de fallecimientos por COVID-19 en España.](./assets/FallecidosAct.png)
 
 ```{r Crea gifs, eval=FALSE, message=FALSE, warning=FALSE, include=FALSE}
 #Gifs
@@ -129,8 +130,7 @@ pngs <- list.files("assets/png/Fallecidos/")
 f <- image_read(paste0("assets/png/Fallecidos/", pngs))
 gif <- image_animate(f, optimize = TRUE, fps = 2, loop = 0)
 image_write(gif, "assets/Fallecidos.gif")
- 
- 
+
 pngs <- list.files("./assets/png/RatioHosp/")
 f <- image_read(paste0("./assets/png/RatioHosp/", pngs))
 gif <- image_animate(f, optimize = TRUE, fps = 2, loop = 0)
@@ -152,29 +152,31 @@ gif <- image_animate(f, optimize = TRUE, fps = 2, loop = 0)
 image_write(gif, "./assets/RatioNuevosCasos.gif")
 ```
 
-
-
-
 ## Evolución
 
-##### Evolución Casos en España
+Las animaciones muestran datos históricos. Para consultar imágenes fijas,
+utiliza la [galería de mapas]({{ '/Galeria' | relative_url }}).
 
-![](./assets/Casos.gif)
+### Evolución de los casos en España
+{: id="evolución-casos-en-españa"}
 
+![Animación histórica de los casos de COVID-19 en España.](./assets/Casos.gif)
 
-##### Evolución Hospitalizados por 100.000 habitantes
+### Evolución de las hospitalizaciones por 100.000 habitantes
+{: id="evolución-hospitalizados-por-100000-habitantes"}
 
-![](./assets/RatioHosp.gif)
+![Animación histórica de hospitalizaciones por 100.000 habitantes en España.](./assets/RatioHosp.gif)
 
-##### Evolución Contagios en España
-![](./assets/Contagios.gif)
+### Evolución de los contagios en España
+{: id="evolución-contagios-en-españa"}
+![Animación histórica de contagios de COVID-19 en España.](./assets/Contagios.gif)
 
+### Evolución de los fallecimientos en España
+{: id="evolución-fallecidos-en-españa"}
 
-##### Evolución Fallecidos en España
-
-![](./assets/Fallecidos.gif)
+![Animación histórica de fallecimientos por COVID-19 en España.](./assets/Fallecidos.gif)
 
 ---
 
-*Generado {% include snippets/datetranslate.html  date="`r format(Sys.time(), "%d %B %Y %H:%M:%S", usetz = TRUE, tz="CET")`" %} con* **R-Studio**.
+*Generado {% include snippets/datetranslate.html  date="`r format(Sys.time(), "%d %B %Y %H:%M:%S", usetz = TRUE, tz="CET")`" %} con* **RStudio**.
 

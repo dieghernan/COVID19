@@ -1,16 +1,15 @@
-# COVID19 en España
+# COVID-19 en España
 
-En la web: https://dieghernan.github.io/COVID19/ 
+En la web: https://dieghernan.github.io/COVID19/
 
 ## El proyecto
-> **Proyecto obsoleto**: Debido a los cambios en el aprovisionamiento de la información, este proyecto se considera obsoleto y no recibirá mas
-actualizaciones. 
+> **Proyecto obsoleto**: Debido a los cambios en el aprovisionamiento de la información, este proyecto se considera obsoleto y no recibirá más
+actualizaciones.
 
-
-Projecto Open Source de visualización geográfica de la evolución de la
-pandemia COVID19 en España. Se proporcionan gráficos estáticos en
-formato `png` (500x500 pixels) y visualizaciones de evolución en formato
-`gif`. El histórico de `png` diarios se encuentran en [este
+Proyecto de código abierto de visualización geográfica de la evolución de la
+pandemia COVID-19 en España. Se proporcionan gráficos estáticos en
+formato PNG (500 × 500 píxeles) y visualizaciones de evolución en formato
+GIF. El archivo de imágenes PNG diarias se encuentra en [este
 repositorio](https://github.com/dieghernan/COVID19/tree/master/assets/png).
 
 **Fuente de datos**
@@ -26,7 +25,7 @@ repositorio](https://github.com/dieghernan/COVID19/tree/master/assets/png).
 
 **Licencia de uso**
 
-Projecto generado bajo [**MIT License**](./LICENSE). Se permite la
+Proyecto generado bajo [**MIT License**](./LICENSE). Se permite la
 reutilización siempre y cuando se cite a este repositorio como fuente.
 
 **Buzón de sugerencias**
@@ -39,17 +38,10 @@ administradores a través de este enlace:
 
 *Website creado con [Chulapa Jekyll Theme](https://dieghernan.github.io/chulapa/)*
 
-![Casos](./assets/Casos.gif)
+![Animación histórica de los casos de COVID-19 en España.](./assets/Casos.gif)
 
-![Ratio Hospitalizados](./assets/RatioHosp.gif)
+![Animación histórica de hospitalizaciones por 100.000 habitantes en España.](./assets/RatioHosp.gif)
 
-![Contagios](./assets/Contagios.gif)
+![Animación histórica de contagios de COVID-19 en España.](./assets/Contagios.gif)
 
-![Fallecidos](./assets/Fallecidos.gif)
-
-## Author identity and Webmentions
-
-The site keeps its project branding and shows the author's avatar and name in an
-h-card linked to <https://dieghernan.github.io/>. The custom head advertises the
-existing Webmention.io receiver for `dieghernan.github.io`. This enables endpoint
-discovery for incoming mentions; it does not display mentions or send them.
+![Animación histórica de fallecimientos por COVID-19 en España.](./assets/Fallecidos.gif)
