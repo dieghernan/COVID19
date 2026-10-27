@@ -1,6 +1,6 @@
 # COVID19 en España
 
-> Proyecto histórico de Diego Hernangómez para visualizar la evolución geográfica de la pandemia de COVID-19 en España mediante mapas generados con R.
+> Proyecto histórico de dieghernan para visualizar la evolución geográfica de la pandemia de COVID-19 en España mediante mapas generados con R.
 
 El proyecto está obsoleto y no recibe actualizaciones debido a cambios en el suministro de información. La portada identifica sus datos como publicados a 9 de abril de 2020. Sus referencias a actualizaciones diarias describen el funcionamiento histórico y no un servicio actual.
 
@@ -22,4 +22,4 @@ Incluye imágenes PNG y animaciones GIF sobre casos, contagios, fallecimientos y
 ## Optional
 
 - [Repositorio](https://github.com/dieghernan/COVID19): Historial y archivos adicionales.
-- [Autor](https://dieghernan.github.io/): Web personal de Diego Hernangómez.
+- [Autor](https://dieghernan.github.io/): Web personal de dieghernan.
