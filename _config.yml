@@ -4,6 +4,8 @@ title                   : COVID19 en España
 timezone                : "Europe/Madrid"
 og_image                : "assets/img/header.png"
 author:
+  url: https://dieghernan.github.io/
+  avatar: https://dieghernan.github.io/assets/img/site/avatar.png
   name                  :  dieghernan
   location              :  "Madrid, España"
 gtag_id                 :  UA-139034853-3
