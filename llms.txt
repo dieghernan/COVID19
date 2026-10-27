@@ -1,0 +1,25 @@
+# COVID19 en España
+
+> Proyecto histórico de Diego Hernangómez para visualizar la evolución geográfica de la pandemia de COVID-19 en España mediante mapas generados con R.
+
+El proyecto está obsoleto y no recibe actualizaciones debido a cambios en el suministro de información. La portada identifica sus datos como publicados a 9 de abril de 2020. Sus referencias a actualizaciones diarias describen el funcionamiento histórico y no un servicio actual.
+
+Incluye imágenes PNG y animaciones GIF sobre casos, contagios, fallecimientos y hospitalizaciones. Las fuentes citadas son el Instituto de Salud Carlos III, EuroGeographics para límites administrativos y Eurostat para población. Los mapas deben interpretarse según las fechas y definiciones de los archivos originales, no como cifras actuales.
+
+## Documentación
+
+- [Web del proyecto](https://dieghernan.github.io/COVID19/): Visualizaciones históricas y aviso de obsolescencia.
+- [README](https://raw.githubusercontent.com/dieghernan/COVID19/master/README.md): Alcance, fuentes y licencia.
+- [Contenido de la portada](https://raw.githubusercontent.com/dieghernan/COVID19/master/index.md): Texto y referencias de las visualizaciones en Markdown.
+
+## Código y archivos
+
+- [Código R](https://github.com/dieghernan/COVID19/tree/master/R): Preparación de datos y generación de mapas.
+- [Imágenes históricas](https://github.com/dieghernan/COVID19/tree/master/assets/png): Archivos PNG del proyecto.
+- [Datos del repositorio](https://github.com/dieghernan/COVID19/tree/master/assets/data): Datos históricos y archivos de apoyo; comprobar la fecha de cada archivo.
+- [Licencia MIT](https://raw.githubusercontent.com/dieghernan/COVID19/master/LICENSE): Condiciones del código del proyecto; las fuentes de datos mantienen sus condiciones propias.
+
+## Optional
+
+- [Repositorio](https://github.com/dieghernan/COVID19): Historial y archivos adicionales.
+- [Autor](https://dieghernan.github.io/): Web personal de Diego Hernangómez.

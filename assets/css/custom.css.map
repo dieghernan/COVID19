@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["custom.scss"],"names":[],"mappings":"AAEA,iBACI","sourcesContent":["@charset \"utf-8\";\n\n.chulapa-masonry {\n    column-count: 4;\n    }"],"file":"custom.css"}

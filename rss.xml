@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+		<title>COVID19 en España | Archivo de visualizaciones históricas</title>
+		<generator>(c) Chulapa Jekyll Theme RSS generator</generator>
+		<link>https://dieghernan.github.io/COVID19</link>
+		<description>Archivo de mapas y gráficos históricos sobre la COVID-19 en España. Proyecto sin actualizaciones.</description>
+		<language>es-ES</language>
+		<copyright>(c) 2026, Diego Hernangómez</copyright>	
+		<pubDate>Tue, 27 Oct 2026 16:21:15 +0100</pubDate>
+		<lastBuildDate>Tue, 27 Oct 2026 16:21:15 +0100</lastBuildDate>
+		<category>blog</category>
+		<ttl>60</ttl>
+		<atom:link href="https://dieghernan.github.io/COVID19/rss.xml" rel="self" type="application/rss+xml" />
+		<image>
+			<title>COVID19 en España | Archivo de visualizaciones históricas</title>
+			<url>https://dieghernan.github.io/COVID19/assets/img/header.png</url>
+			<link>https://dieghernan.github.io/COVID19</link>
+			<description>Archivo de mapas y gráficos históricos sobre la COVID-19 en España. Proyecto sin actualizaciones.</description>
+		</image></channel>
+</rss>

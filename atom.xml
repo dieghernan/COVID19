@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" >
+	<generator uri="https://dieghernan.github.io/chulapa" version="1.0.0">Chulapa</generator>
+	<link href="https://dieghernan.github.io/COVID19/atom.xml" rel="self" type="application/atom+xml" />
+	<link href="https://dieghernan.github.io/COVID19" rel="alternate" type="text/html" />
+	<updated>2026-10-27T16:21:15+01:00</updated>
+	<id>https://dieghernan.github.io/COVID19/atom.xml</id>
+	<title>COVID19 en España | Archivo de visualizaciones históricas</title>
+	<subtitle>Archivo de visualizaciones históricas</subtitle>
+	<author>
+		<name>Diego Hernangómez</name>
+		<uri>https://x.com/dhernangomez</uri>			
+	</author>
+	<rights>(c) 2026, Diego Hernangómez</rights>
+	
+	<logo>https://dieghernan.github.io/COVID19/assets/img/header.png</logo></feed>
