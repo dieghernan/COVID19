@@ -13,12 +13,12 @@ repository: dieghernan/COVID19
 timezone: Europe/Madrid
 
 # Sharing images
-og_image: assets/img/header.png
-og_image_alt: Mapa de España con municipios representados por puntos rojos sobre fondo
-  oscuro.
-og_image_width: 850
-og_image_height: 429
-og_image_type: image/png
+og_image: https://dieghernan.github.io/COVID19/assets/img/social-preview.jpg
+og_image_alt: COVID-19 en España. Archivo de mapas y gráficos históricos de abril
+  de 2020, con un mapa de municipios sobre fondo oscuro.
+og_image_width: 1200
+og_image_height: 630
+og_image_type: image/jpeg
 
 # Author and publisher
 author:
@@ -137,6 +137,7 @@ kramdown:
   enable_coderay: false
 incremental: false
 exclude:
+- scripts
 - README.md
 - Gemfile
 - vendor

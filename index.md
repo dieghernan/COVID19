@@ -1,5 +1,11 @@
 ---
 title: "COVID-19 en España"
+og_image: https://dieghernan.github.io/COVID19/assets/img/social-preview.jpg
+og_image_alt: COVID-19 en España. Archivo de mapas y gráficos históricos de abril
+  de 2020, con un mapa de municipios sobre fondo oscuro.
+og_image_width: 1200
+og_image_height: 630
+og_image_type: image/jpeg
 subtitle: "Archivo de visualizaciones históricas"
 show_toc: true
 h_max: 2

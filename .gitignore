@@ -27,3 +27,7 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 CNIG
+
+_site/
+.jekyll-cache/
+.bundle/
