@@ -6,7 +6,7 @@
     <!-- MIT License -->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2026-10-29 -->
+    <!-- Page build 2026-11-02 -->
     <!-- Jekyll Version 4.4.1 -->
     <!-- Google structured data -->
     <script type="application/ld+json">
@@ -16,10 +16,12 @@
         "@id": "https://dieghernan.github.io/COVID19/#website",
         "name": "COVID19 en España",
         "url": "https://dieghernan.github.io/COVID19/",
+        "inLanguage": "es-ES",
         "headline": "COVID19 en España",
         "image": "https://dieghernan.github.io/COVID19/assets/img/social-preview.jpg",
         "author": {
           "@type": "Person",
+          "@id": "https://dieghernan.github.io/COVID19/#author",
           "name": "dieghernan",
           "url": "https://x.com/dhernangomez",
           "sameAs": [
@@ -32,6 +34,7 @@
         },
         "publisher": {
           "@type": "Person",
+          "@id": "https://dieghernan.github.io/COVID19/#publisher",
           "name": "dieghernan",
           "url": "https://dieghernan.github.io/",
           "image": "https://dieghernan.github.io/assets/img/site/avatar.png"
@@ -52,6 +55,7 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
+        "@id": "https://dieghernan.github.io/COVID19/#author",
         "image": "https://dieghernan.github.io/assets/img/site/avatar.png",
         "homeLocation": {
           "@type": "Place",
@@ -102,8 +106,8 @@
     <meta name="twitter:description" content="Archivo de visualizaciones históricas - Mapas y gráficos históricos sobre la COVID-19 en España. Proyecto sin actualizaciones.">
     <meta name="twitter:creator" content="@dhernangomez" >
     <!-- start custom head snippets -->
-<!-- this script is inserted before the css stylesheet -->
-<!-- end custom head snippets -->
+    <!-- this script is inserted before the css stylesheet -->
+    <!-- end custom head snippets -->
     <!-- CSS -->
     <!-- Preconnect with Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -128,7 +132,7 @@
       gtag('js', new Date());
       gtag('config', 'G-5JHYDPSL0K');
     </script>
-    <link rel="describedby" type="text/plain" href="/COVID19/llms.txt">
+<link rel="describedby" type="text/plain" href="/COVID19/llms.txt">
 <script defer src="https://cloud.umami.is/script.js" data-website-id="c23b83bb-5f33-4256-a5b5-fbc59c1c7ae8" data-domains="dieghernan.github.io"></script>
 <!-- Author identity and incoming Webmention discovery -->
 <link rel="author" href="https://dieghernan.github.io/">
@@ -147,6 +151,51 @@
 <meta name="msapplication-TileColor" content="#9f00a7">
 <meta name="msapplication-config" content="https://dieghernan.github.io/COVID19/assets/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "@id": "https://dieghernan.github.io/COVID19/#source-code",
+  "url": "https://dieghernan.github.io/COVID19/",
+  "name": "COVID19",
+  "description": "Código en R para preparar datos históricos del ISCIII y generar mapas y gráficos de la COVID-19 en España. El proyecto está obsoleto y no recibe actualizaciones; sus salidas son un archivo histórico, no un seguimiento actual de la pandemia.",
+  "codeRepository": "https://github.com/dieghernan/COVID19",
+  "programmingLanguage": "R",
+  "runtimePlatform": "R",
+  "license": "https://opensource.org/licenses/MIT",
+  "keywords": ["COVID-19","España","R","visualización de datos","archivo histórico"],
+  "about": {"@id":"https://dieghernan.github.io/COVID19/#dataset"},
+  "author": {"@type":"Person","@id":"https://dieghernan.github.io/#author","name":"Diego Hernangómez","url":"https://dieghernan.github.io/","sameAs":"https://orcid.org/0000-0001-8457-4658"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "@id": "https://dieghernan.github.io/COVID19/#dataset",
+  "url": "https://dieghernan.github.io/COVID19/",
+  "name": "Serie histórica procesada de COVID-19 en España, febrero–abril de 2020",
+  "description": "Instantánea histórica del CSV procesado por el proyecto COVID19 a partir de los datos del Instituto de Salud Carlos III (ISCIII). Contiene 980 registros de comunidades y ciudades autónomas y del agregado nacional, entre el 20 de febrero y el 8 de abril de 2020, con casos, hospitalizaciones, UCI, fallecidos, recuperados, casos activos y métricas derivadas. El archivo conserva los valores y criterios del procesamiento original; no es una serie revisada ni un servicio actualizado. El proyecto está obsoleto.",
+  "inLanguage": "es",
+  "isAccessibleForFree": true,
+  "dateCreated": "2020-04-10T09:27:49Z",
+  "temporalCoverage": "2020-02-20/2020-04-08",
+  "spatialCoverage": {"@type":"Place","name":"España"},
+  "isBasedOn": {"@type":"CreativeWork","name":"Serie histórica de datos de COVID-19 del ISCIII","url":"https://covid19.isciii.es/","publisher":{"@type":"Organization","name":"Instituto de Salud Carlos III","alternateName":"ISCIII"}},
+  "creditText": "Datos originales: Instituto de Salud Carlos III. Procesamiento y visualizaciones: Diego Hernangómez.",
+  "keywords": ["COVID-19","España","ISCIII","comunidades autónomas","serie histórica","CSV"],
+  "variableMeasured": ["Casos","Hospitalizados","UCI","Fallecidos","Recuperados","Casos activos"],
+  "creator": {"@type":"Person","@id":"https://dieghernan.github.io/#author","name":"Diego Hernangómez","url":"https://dieghernan.github.io/","sameAs":"https://orcid.org/0000-0001-8457-4658"},
+  "distribution": [
+    {
+  "@type": "DataDownload",
+  "name": "Instantánea histórica procesada (CSV)",
+  "encodingFormat": "text/csv",
+  "contentUrl": "https://dieghernan.github.io/COVID19/assets/data/COVIDEsp_actual.csv"
+}
+  ]
+}
+</script>
 </head>
 <body class="d-flex flex-column" id="body">
 	<a class="sr-only sr-only-focusable chulapa-skip-link" href="#chulapa-content">Skip to content</a>
