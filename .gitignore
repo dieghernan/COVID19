@@ -31,3 +31,5 @@ CNIG
 _site/
 .jekyll-cache/
 .bundle/
+
+__pycache__/

@@ -18,3 +18,6 @@
 <meta name="msapplication-TileColor" content="#9f00a7">
 <meta name="msapplication-config" content="https://dieghernan.github.io/COVID19/assets/favicon/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
+{% if page.url == '/' %}
+{% include custom/structured_data/project.html %}
+{% endif %}

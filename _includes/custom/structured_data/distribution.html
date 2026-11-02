@@ -1,0 +1,6 @@
+{
+  "@type": "DataDownload",
+  "name": {{ include.file.name | jsonify }},
+  "encodingFormat": {{ include.file.encodingFormat | jsonify }},
+  "contentUrl": {{ include.file.path | absolute_url | jsonify }}
+}

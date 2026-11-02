@@ -1,0 +1,73 @@
+{
+  "creator": {
+    "@type": "Person",
+    "@id": "https://dieghernan.github.io/#author",
+    "name": "Diego Hernangómez",
+    "url": "https://dieghernan.github.io/",
+    "sameAs": "https://orcid.org/0000-0001-8457-4658"
+  },
+  "software": {
+    "name": "COVID19",
+    "description": "Código en R para preparar datos históricos del ISCIII y generar mapas y gráficos de la COVID-19 en España. El proyecto está obsoleto y no recibe actualizaciones; sus salidas son un archivo histórico, no un seguimiento actual de la pandemia.",
+    "codeRepository": "https://github.com/dieghernan/COVID19",
+    "programmingLanguage": "R",
+    "runtimePlatform": "R",
+    "license": "https://opensource.org/licenses/MIT",
+    "keywords": [
+      "COVID-19",
+      "España",
+      "R",
+      "visualización de datos",
+      "archivo histórico"
+    ],
+    "about": {
+      "@id": "https://dieghernan.github.io/COVID19/#dataset"
+    }
+  },
+  "dataset": {
+    "name": "Serie histórica procesada de COVID-19 en España, febrero–abril de 2020",
+    "description": "Instantánea histórica del CSV procesado por el proyecto COVID19 a partir de los datos del Instituto de Salud Carlos III (ISCIII). Contiene 980 registros de comunidades y ciudades autónomas y del agregado nacional, entre el 20 de febrero y el 8 de abril de 2020, con casos, hospitalizaciones, UCI, fallecidos, recuperados, casos activos y métricas derivadas. El archivo conserva los valores y criterios del procesamiento original; no es una serie revisada ni un servicio actualizado. El proyecto está obsoleto.",
+    "inLanguage": "es",
+    "isAccessibleForFree": true,
+    "dateCreated": "2020-04-10T09:27:49Z",
+    "temporalCoverage": "2020-02-20/2020-04-08",
+    "spatialCoverage": {
+      "@type": "Place",
+      "name": "España"
+    },
+    "isBasedOn": {
+      "@type": "CreativeWork",
+      "name": "Serie histórica de datos de COVID-19 del ISCIII",
+      "url": "https://covid19.isciii.es/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Instituto de Salud Carlos III",
+        "alternateName": "ISCIII"
+      }
+    },
+    "creditText": "Datos originales: Instituto de Salud Carlos III. Procesamiento y visualizaciones: Diego Hernangómez.",
+    "keywords": [
+      "COVID-19",
+      "España",
+      "ISCIII",
+      "comunidades autónomas",
+      "serie histórica",
+      "CSV"
+    ],
+    "variableMeasured": [
+      "Casos",
+      "Hospitalizados",
+      "UCI",
+      "Fallecidos",
+      "Recuperados",
+      "Casos activos"
+    ]
+  },
+  "distributions": [
+    {
+      "name": "Instantánea histórica procesada (CSV)",
+      "encodingFormat": "text/csv",
+      "path": "/assets/data/COVIDEsp_actual.csv"
+    }
+  ]
+}
