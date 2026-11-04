@@ -62,8 +62,6 @@ navbar:
   nav:
   - title: Galería
     url: "/Galeria"
-  - title: Mi blog
-    url: https://dieghernan.github.io/
   - title: '<i class="fab fa-github mr-1" aria-hidden="true"></i> GitHub'
     url: https://github.com/dieghernan/COVID19
 
