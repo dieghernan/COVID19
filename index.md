@@ -47,7 +47,7 @@ repositorio](https://github.com/dieghernan/COVID19/tree/master/assets/png).
     (ISCIII)](https://covid19.isciii.es/).
 -   © EuroGeographics para los límites administrativos.
 -   Datos de población extraídos mediante el paquete
-    [`eurostat`](http://ropengov.github.io/eurostat) (© Leo Lahti, Janne
+    [**eurostat**](http://ropengov.github.io/eurostat) (© Leo Lahti, Janne
     Huovari, Markus Kainu, Przemyslaw Biecek. Retrieval and analysis of
     Eurostat open data with the eurostat package. [R Journal
     9(1):385-392, 2017.](https://journal.r-project.org/archive/2017/RJ-2017-019/index.html))

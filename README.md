@@ -18,7 +18,7 @@ repositorio](https://github.com/dieghernan/COVID19/tree/master/assets/png).
     (ISCIII)](https://covid19.isciii.es/).
 -   © EuroGeographics para los límites administrativos.
 -   Datos de población extraídos mediante el paquete
-    [`eurostat`](http://ropengov.github.io/eurostat) (© Leo Lahti, Janne
+    [**eurostat**](http://ropengov.github.io/eurostat) (© Leo Lahti, Janne
     Huovari, Markus Kainu, Przemyslaw Biecek. Retrieval and analysis of
     Eurostat open data with the eurostat package. [R Journal
     9(1):385-392, 2017.](https://journal.r-project.org/archive/2017/RJ-2017-019/index.html))
@@ -33,7 +33,7 @@ reutilización siempre y cuando se cite a este repositorio como fuente.
 Puedes comunicar errores del archivo mediante el
 [buzón de sugerencias](https://github.com/dieghernan/COVID19/issues/new/choose).
 
-*Website creado con [Chulapa Jekyll Theme](https://dieghernan.github.io/chulapa/)*
+Sitio creado con [**Chulapa**](https://dieghernan.github.io/chulapa/) para **Jekyll**.
 
 ![Animación histórica de los casos de COVID-19 en España.](./assets/Casos.gif)
 
