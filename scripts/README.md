@@ -2,8 +2,7 @@
 
 `social-card.html` uses the existing `assets/img/header.png` municipality map,
 Varta and Lora from the site configuration and its black and white palette.
-The red dots belong to the original municipality illustration; they are not
-presented as COVID-19 case counts.
+The red dots show municipalities from the original illustration.
 
 Serve the repository root over HTTP. Open `scripts/social-card.html`, wait
 for local fonts and the image to load and capture JPEG screenshots at

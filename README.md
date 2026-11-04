@@ -3,8 +3,8 @@
 En la web: https://dieghernan.github.io/COVID19/
 
 ## El proyecto
-> **Proyecto obsoleto**: Debido a los cambios en el aprovisionamiento de la información, este proyecto se considera obsoleto y no recibirá más
-actualizaciones.
+> **Proyecto finalizado.** Los mapas y gráficos se conservan como archivo
+> histórico tras los cambios en el suministro de datos.
 
 Proyecto de código abierto de visualización geográfica de la evolución de la
 pandemia COVID-19 en España. Se proporcionan gráficos estáticos en
@@ -30,11 +30,8 @@ reutilización siempre y cuando se cite a este repositorio como fuente.
 
 **Buzón de sugerencias**
 
-Este proyecto se plantea como un proyecto colaborativo. Para sugerencias
-de nuevas visualizaciones, errores en los datos o cualquier otro asunto
-relacionado con este proyecto, puedes ponerte en contacto con los
-administradores a través de este enlace:
-[Buzón](https://github.com/dieghernan/COVID19/issues/new/choose).
+Puedes comunicar errores del archivo mediante el
+[buzón de sugerencias](https://github.com/dieghernan/COVID19/issues/new/choose).
 
 *Website creado con [Chulapa Jekyll Theme](https://dieghernan.github.io/chulapa/)*
 
