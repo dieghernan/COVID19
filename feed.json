@@ -1,0 +1,17 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "COVID19 en España",
+  "home_page_url": "https://dieghernan.github.io/COVID19/",
+  "feed_url": "https://dieghernan.github.io/COVID19/feed.json",
+  "language": "es-ES",
+  "description": "Archivo de mapas y gráficos históricos sobre la COVID-19 en España. Proyecto sin actualizaciones.",
+  "icon": "https://dieghernan.github.io/COVID19/assets/img/social-preview.jpg",
+  
+  "authors": [{
+    "name": "dieghernan",
+    "url": "https://dieghernan.github.io/"
+  }],
+  "items": [
+    
+  ]
+}

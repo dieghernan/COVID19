@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-	<channel>
-		<title>COVID19 en España | Archivo de visualizaciones históricas</title>
-		<generator>(c) Chulapa Jekyll Theme RSS generator</generator>
-		<link>https://dieghernan.github.io/COVID19</link>
-		<description>Archivo de mapas y gráficos históricos sobre la COVID-19 en España. Proyecto sin actualizaciones.</description>
-		<language>es-ES</language>
-		<copyright>(c) 2026, dieghernan</copyright>
-		<pubDate>Mon, 09 Nov 2026 16:59:06 +0100</pubDate>
-		<lastBuildDate>Mon, 09 Nov 2026 16:59:06 +0100</lastBuildDate>
-		<category>blog</category>
-		<ttl>60</ttl>
-		<atom:link href="https://dieghernan.github.io/COVID19/rss.xml" rel="self" type="application/rss+xml" />
-		<image>
-			<title>COVID19 en España | Archivo de visualizaciones históricas</title>
-			<url>https://dieghernan.github.io/COVID19/assets/img/social-preview.jpg</url>
-			<link>https://dieghernan.github.io/COVID19</link>
-			<description>Archivo de mapas y gráficos históricos sobre la COVID-19 en España. Proyecto sin actualizaciones.</description>
-		</image></channel>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>COVID19 en España | Archivo de visualizaciones históricas</title>
+    <generator>(c) Chulapa Jekyll Theme RSS generator</generator>
+    <link>https://dieghernan.github.io/COVID19</link>
+    <description>Archivo de mapas y gráficos históricos sobre la COVID-19 en España. Proyecto sin actualizaciones.</description>
+    <language>es-ES</language>
+    <copyright>(c) 2026, dieghernan</copyright>
+    <lastBuildDate>Sat, 14 Nov 2026 09:08:51 +0100</lastBuildDate>
+    <category>blog</category>
+    <ttl>60</ttl>
+    <atom:link href="https://dieghernan.github.io/COVID19/rss.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <title>COVID19 en España | Archivo de visualizaciones históricas</title>
+      <url>https://dieghernan.github.io/COVID19/assets/img/social-preview.jpg</url>
+      <link>https://dieghernan.github.io/COVID19</link>
+      <description>Archivo de mapas y gráficos históricos sobre la COVID-19 en España. Proyecto sin actualizaciones.</description>
+    </image>
+    
+  </channel>
 </rss>
