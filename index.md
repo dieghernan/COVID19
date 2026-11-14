@@ -27,7 +27,7 @@ El proyecto
 
 **Proyecto finalizado.** Los mapas y gráficos se conservan como archivo
 histórico tras los cambios en el suministro de datos.
-{: .alert .alert-danger .p-3 .mx-2 mb-3}
+{: .callout-important role="note" aria-label="Importante"}
 
 Proyecto de código abierto de visualización geográfica de la evolución de la
 pandemia COVID-19 en España. Se proporcionan gráficos estáticos en
